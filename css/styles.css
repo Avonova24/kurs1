@@ -154,4 +154,5 @@ footer {
 	font-size: 14px;
 	text-align: center;
     z-index: 1000;
-	box-si
+	box-sizing: border-box;
+}
