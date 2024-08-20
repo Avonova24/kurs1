@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # macOS-specifika filer
 .DS_Store
 .AppleDouble
@@ -11,3 +12,6 @@ yarn-error.log*
 
 # Loggfiler
 *.log
+=======
+.DS_Store
+>>>>>>> 5f15459 (Lägg till .DS_Store till .gitignore)
