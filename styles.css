@@ -60,7 +60,7 @@ ul li {
 	margin-bottom: 10px;
 	padding-left: 30px; 
 	
-	background-image: url("/images/bullet.png"); 
+	background-image: url("images/bullet.png"); 
 	background-repeat: no-repeat;
 	background-size: 10px 10px;
 	background-position: 0 center;
@@ -75,7 +75,7 @@ ul li {
 	margin-bottom: 10px;
 	display: flex;
 	align-items: center;
-	background-image: url("/images/arrow.png");
+	background-image: url("images/arrow.png");
 	background-repeat: no-repeat;
 	background-size: 18px 18px;
 	background-position: 0 center;
