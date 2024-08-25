@@ -20,13 +20,34 @@
             text-align: center;
             padding-right: 15%;
             padding-left: 15%;
+            
+        }
+
+        h1 {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            max-width: 600px;
+            font-size: 1.7em;
+            margin-top: 50px;
+            text-align: center;
+
+        }
+
+        .infotext {
             padding-bottom: 20px;
+            font-size: 17px;
         }
 
         .content-container {
+            max-width: 800px;
             width: 100%;
 			display: flex;
 			justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         .toggle-content {
@@ -42,6 +63,7 @@
 			justify-content: center;
 			transition: opacity 0.3s ease, position 0.3s ease;
 			margin: 0;
+            padding: 0;
 		}
 
         .toggle-text {
@@ -58,22 +80,23 @@
 			position: relative; /* Gör att innehållet inuti kan placeras absolut relativt denna container */
             display: flex;
             align-items: center;
+            max-width: 400px;
             
 		}
 
         .toggle-container img {
             width: 100%;
-            max-width: 300px;
+            
         }
 
 
         .button-container {
             position: absolute;
-            top: 25%; /* Justera detta för att passa dina behov */
-            right: -40px; /* Justera detta för att passa dina behov */
+            top: 32%; /* Justera detta för att passa dina behov */
+            right: -10px; /* Justera detta för att passa dina behov */
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 25px;
         }
 
         .button-container label {
@@ -105,7 +128,6 @@
 			display: flex;
 			position: static;
 			opacity: 1;
-        
 		}
 
        
@@ -119,28 +141,46 @@
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
         <h1>Vad styr arbetsmiljöarbetet?</h1>
+        <p class="infotext"> I Sverige stiftar riksdagen lagar enligt grundlagen, medan 
+        regeringen utfärdar förordningar som kompletterar dessa lagar. Myndigheter, som 
+        Arbetsmiljöverket, har sedan uppgiften att utfärda föreskrifter inom sina 
+        respektive områden. Arbetsmiljöverket har dessutom tillsynsansvar och arbetar 
+        för att förmedla lagstiftningen kring arbetsmiljö och arbetstid. 
+        <br><br> <i>Klicka på knapparna för att läsa mer om respektive område.</i></p>
     
         <div class="content-container">
             <input type="radio" id="toggle1" name="toggle" class="toggle-checkbox">
-			<!--TEXTINNEHÅLL-->	
+			
+            <!--TEXTINNEHÅLL-->	
             <div class="toggle-content">
-                <p class="toggle-text"><strong>Arbetsmiljölagen</strong> är en ramlag vilket innebär att den i stora drag anger vilka krav som ställs på arbetsmiljön och vilket ansvar olika aktörer har. De flesta kraven ligger främst på <strong>arbetsgivaren</strong> som ska göra allt som behövs för att förebygga ohälsor och olyckor.
-                Syftet med reglerna är att ingen ska behöva fara illa, skada sig eller omkomma på jobbet och regelverket är grunden till hur vi arbetar med arbetsmiljö. Arbete ska planläggas och anordnas så, att det kan utföras i en sund och säker miljö. Arbetsgivare och arbetstagare ska samverka för att åstadkomma en god arbetsmiljö.</p>
-            </div>
+                <p class="toggle-text"><strong>Arbetsmiljölagen</strong> är en ramlag, vilket 
+                betyder att den ger en övergripande vägledning om vilka krav som ställs på arbetsmiljön 
+                och vilket ansvar olika aktörer har. 
+                
+                <br><br>Huvudansvaret ligger på <strong>arbetsgivaren</strong> 
+                som har skyldighet att göra allt som krävs för att förebygga ohälsa och olyckor på arbetsplatsen. 
+                
+                <br><br>Reglernas syfte är att ingen ska behöva skadas, drabbas av ohälsa eller omkomma på jobbet. 
+                Arbetsmiljöarbetet ska planeras och organiseras så att det kan bedrivas i en sund och säker miljö. 
+                
+                <br><br>För att skapa en god arbetsmiljö är samverkan mellan arbetsgivare och arbetstagare avgörande.</div>
             
             <input type="radio" id="toggle2" name="toggle" class="toggle-checkbox">
             
             <div class="toggle-content">
-                <p class="toggle-text"><strong>Förordningar</strong> är utfärdade av regeringen och preciserar hur lagar ska tillämpas. För arbetsmiljöarbetet är förordningar ett viktigt verktyg för att implementera och specificera arbetsmiljölagen i olika sektorer och arbetsmiljöer.</p>
-            </div>
+                <p class="toggle-text"><strong>Förordningar</strong> utfärdas av regeringen och klargör 
+                hur lagar ska tillämpas i praktiken. Inom arbetsmiljöarbetet är förordningar ett viktigt verktyg för 
+                att omsätta och anpassa arbetsmiljölagen till olika branscher och arbetsmiljöer.</div>
             
             <input type="radio" id="toggle3" name="toggle" class="toggle-checkbox">
             
             <div class="toggle-content">
-                <p class="toggle-text"><strong>Föreskrifter</strong> utfärdas av Arbetsmiljöverket och kompletterar både arbetsmiljölagen och förordningarna. De innehåller mer detaljerade regler för specifika branscher eller arbetsmiljöfrågor, och är juridiskt bindande.</p>
-            </div>
+                <p class="toggle-text"><strong>Föreskrifter</strong> utfärdas av Arbetsmiljöverket och kompletterar 
+                både arbetsmiljölagen och förordningarna. De innehåller detaljerade regler för specifika branscher eller 
+                arbetsmiljöfrågor och är juridiskt bindande.</div>
     
-            <div class="toggle-container">
+                <!--BILD OCH KNAPPAR-->	
+                <div class="toggle-container">
                 <img src="../images/eutriangel.png" alt="EU-flaggan i en triangelbild">
                 <div class="button-container">
                     <label for="toggle1" class="toggle-button">Arbetsmiljölagen (AML)</label>
@@ -148,6 +188,17 @@
                     <label for="toggle3" class="toggle-button">Föreskrifter</label>
                 </div>
             </div>
+        </div>
+
+        <h2>Globala och Europeiska ramverk för arbetsmiljö: ILO och EUs
+            Byggplatsdirektiv</h2>
+        
+        <div>
+
+
+
+
+
         </div>
     </div>
 </body>
