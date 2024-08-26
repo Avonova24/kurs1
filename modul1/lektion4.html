@@ -18,8 +18,7 @@
 
         h1, p  {
             text-align: center;
-            padding-right: 15%;
-            padding-left: 15%;
+            
             
         }
 
@@ -37,12 +36,13 @@
         }
 
         .infotext {
+            max-width: 900px;
             padding-bottom: 20px;
-            font-size: 17px;
+            font-size: 18px;
         }
 
         .content-container {
-            max-width: 800px;
+            max-width: 900px;
             width: 100%;
 			display: flex;
 			justify-content: center;
@@ -62,7 +62,7 @@
 			align-items: center;
 			justify-content: center;
 			transition: opacity 0.3s ease, position 0.3s ease;
-			margin: 0;
+			margin: 0 -5% 0 0;
             padding: 0;
 		}
 
@@ -131,31 +131,63 @@
 		}
 
         .flexbox {
+            max-width: 900px;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
+            flex-direction: column;
             margin-top: 30px;
         }
 
-        .flexbox img {
-            width: 450px;
-            padding: 0;
-            margin: 35px -7% 0 0;
-        }
-
         .flexbox p {
-            padding: 0 5% 0 0;
             text-align: left;
-            font-size: 17px;
-            margin-right: 15px;
-
-        }
-
-        .text-content {
-            flex-direction: column;
+            margin: 0;
             padding: 0;
+            flex: 1.5;
         }
-       
+     
+
+        .content-box-1, .content-box-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .content-box-2 {
+            margin-top: 10%;
+        }
+
+        .content-box-1 img, .content-box-2 img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+
+            width: 100%; /* Fyll föräldraelementet */
+            max-width: 230px; /* Begränsa maxbredd */
+            aspect-ratio: 1 / 1; /* Bevara 1:1-förhållande, så det alltid är en kvadrat */
+            border-radius: 50%; /* Gör bilden rund */
+            
+            object-fit: cover; /* Gör så att bilden fyller den runda ytan */
+            overflow: hidden; /* Döljer innehåll utanför runda formen */
+            
+        }
+
+        
+        .content-box-1 img {
+            margin-left: 5%;
+
+        }
+        
+        .content-box-2 img {
+            margin-right: 5%;
+        }
+
+        .image-box img {
+            width: 500px;
+            margin-top: 15%;
+        }
       
         
     </style>
@@ -215,27 +247,38 @@
             </div>
         </div>
 
-                <h2 class="rubrik2">Globala och Europeiska ramverk för arbetsmiljö: ILO och EUs
-                Byggplatsdirektiv</h2>
-                <p><b>Internationella arbetsorganisationen (ILO)</b>, som är FNs
-                fackorgan för arbetslivsfrågor, arbetar för att främja sysselsättning 
-                och förbättra arbetsvillkoren globalt. ILO har utvecklat nära 200 konventioner 
-                om rättigheter i arbetslivet, vilka fungerar som juridiska och politiska verktyg 
-                för att reglera grundläggande mänskliga rättigheter i arbetslivet, både i 
-                Sverige och internationellt.</p>
+        <h2 class="rubrik2">Globala och Europeiska ramverk för arbetsmiljö: ILO och EUs
+        Byggplatsdirektiv</h2>
+       
 
-                <div class="flexbox">
-            <div class="text-content">
-                    
-                <p><br><br>Som medlem i EU är Sverige skyldigt att anpassa sina lagar efter EU
+        <div class="flexbox">
+            <div class="content-box-1">
+                <p><b>Internationella arbetsorganisationen (ILO)</b>, som är FNs
+                    fackorgan för arbetslivsfrågor, arbetar för att främja sysselsättning 
+                    och förbättra arbetsvillkoren globalt. ILO har utvecklat nära 200 konventioner 
+                    om rättigheter i arbetslivet, vilka fungerar som juridiska och politiska verktyg 
+                    för att reglera grundläggande mänskliga rättigheter i arbetslivet, både i 
+                    Sverige och internationellt.</p>
+            
+                <img src="../images/fnflagga.png" alt="FN Flagga">
+
+            </div>
+
+            <div class="content-box-2">
+                <img src="../images/byggarbetare4.png" alt="Byggarbetare som står på ett fält">
+                <p>Som medlem i EU är Sverige skyldigt att anpassa sina lagar efter EU
                 direktiv. Ett sådant är Byggplatsdirektivet (92/57 EEG), som syftar till att 
                 främja säkerheten och hälsan för arbetstagare på byggarbetsplatser. Enligt 
                 inledningen av direktivet har brister i projektering och planering under 
                 förberedelsestadiet bidragit till över hälften av de olyckor som inträffat 
                 på byggarbetsplatser inom EU. Tillfälliga och rörliga arbetsplatser innebär 
                 särskilt stora risker för arbetstagarna.</p>
-            </div>
-              
+            
+                
+
+            </div> 
+        </div>
+        <div class="image-box">
             <img src="../images/eudirektiv.png" alt="Pratbubbla om EU direktiv">
         </div>
     </div>
