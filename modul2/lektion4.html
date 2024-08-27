@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanliga utmaningar i bygg- och anläggningsprojekt</title>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;   
+        }
+
+        h1, p  {
+            text-align: center;
+            padding-right: 15%;
+            padding-left: 15%;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        .circle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            max-width: 1000px;
+        }
+
+        .button1, .button2, .button3, .button4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+            
+            width: 170px;
+            height: 60px;
+            padding: 20px;
+            
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .button1, .button2  {
+            background-color: #ffdcaf;
+        }
+
+       
+        .button3, .button4 {
+            background-color: #feddd5;
+
+        }
+
+        .button1:hover, .button2:hover, .button3:hover, .button4:hover {
+            background-color: #00866d;
+            color: white;
+        }
+
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: 700px;
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+
+        .content img {
+            width: 800px;
+            margin-top: 0;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+        </div>
+        <h1>De viktigaste förändringarna</h1>
+        <p>I samband med att Arbetsmiljöverkets föreskrifter uppdateras, har reglerna för planering 
+        och projektering genomgått betydande förändringar. Nedan följer en översikt över hur 
+        bestämmelserna från tidigare föreskrifter har omstrukturerats och integrerats i de nya 
+        regelverken. De nuvarande reglerna för planering och projektering återfinns i två AFS:</p>
+        
+        <div class="circle-container">
+            <!-- FÖRSTA RADEN -->
+            <label class="button1" for="toggle1">§16 från AFS 1999:3</label>
+            <label class="button2" for="toggle2">Ansvaret för projektering under bruksskedet (tidigare i AFS 2020:1)</label>
+            <label class="button3" for="toggle3">Bestämmelser som behandlar risker vid vissa typer av arbeten</label>
+            <label class="button4" for="toggle4">Kraven på arbetsplatsens utformning</label>
+            
+        </div>
+
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/val1.png" alt="val 3">
+            
+        </div>
+
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/val2.png" alt="val 2">
+            
+        </div>
+
+        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/val3.png" alt="val 3">
+           
+        </div>
+
+        <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/val2.png" alt="val 2">
+            
+        </div>
+
+    
+    </div>
+</body>
+</html>
