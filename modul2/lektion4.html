@@ -132,21 +132,21 @@
 
         .illustration {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             text-align: center;
             gap: 30px;
             
         }
 
-        .button {
+        .button, .markerad {
             flex-direction: column;
-            background-color: #01332a;
+           
             color: white;
             font-size: 15px;
             text-decoration: none;
             
-            width: 150px;
+            width: 160px;
             height: 50px;
             padding: 20px;
             
@@ -157,18 +157,30 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
+        .button {
+            background-color: #01332a;
+        }
+
         .button h3 {
             font-size: 15px;
             font-weight: 600;
-        }
-        .button p {
-            font-size: 14px;
-            text-align: center;
             margin: 0;
             padding: 0;
         }
+        .button p {
+            text-align: center;
+            
+            font-size: 14px;
+            line-height: 15px;
+           
+            margin: 0;
+            padding: 0;
 
-        .markerad{
+            background-color: pink;
+
+        }
+
+        .markerad {
             background-color: #00866d;
         }
         
@@ -230,20 +242,30 @@
 
         <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
         <div class="content">
-            <img src="../images/val3.png" alt="val 3">
+            <div class="illustration">
+                <div class="button">
+                    <h3>AFS 2023:3</h3>
+                    <p>Projektering och byggarbetsmiljösamordning 
+                    – grundläggande skyldigheter</p>
+            </div>
+            <div>AFS 2023:12</div>
+            <div class="markerad">AFS 2023:13</div>
+           </div>
+           <!--<img src="../images/val3.png" alt="val 3">-->
            
         </div>
 
         <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
+        
         <div class="content">
-           <div class="illustration">
-            <div class="button">
+            <div class="illustration">
+                <div class="button">
                 <h3>AFS 2023:3</h3>
                 <p>Projektering och byggarbetsmiljösamordning 
                 – grundläggande skyldigheter</p>
             </div>
             <div class="markerad">AFS 2023:12</div>
-            <div>AFS 2023:13</div>
+            <div class="button">AFS 2023:13</div>
            </div>
            
             <!-- <img src="../images/val2.png" alt="val 2">-->
