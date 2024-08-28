@@ -12,13 +12,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;   
-        }
-
-        h1, p  {
             text-align: center;
-            padding-right: 15%;
-            padding-left: 15%;
+            flex-direction: column;   
+            padding: 5% 15%
         }
 
         h1 {
@@ -27,7 +23,6 @@
 
         h2 {
             font-size: 19px;
-            text-align: center;
             margin: 0;
             padding: 0;
             
@@ -39,28 +34,24 @@
             align-items: center;
 
             gap: 20px;
-            height: 100px;
             width: 100%;
 
             margin-top: 5%;
 
         }
 
-        .flex-text1, .flex-text2 {
+        .flex-text {
             flex-direction: column;
             align-items: center;
 
         }
 
         .flex p {
-            text-align: center;
-
-            max-width: 400px;
-            
-            margin: 10px 0 0 0;
-            padding: 0 7%;
-
             font-size: 15px;
+            max-width: 400px;
+            margin: 7px 0 0 0;
+            padding: 0 7%;  
+            line-height: 22px;
 
         }
 
@@ -73,11 +64,11 @@
             max-width: 1000px;
             
             gap: 15px;
-            margin-top: 15px;
+            margin-top: 20px;
             margin-bottom: 40px;
         }
 
-        .button1, .button2, .button3, .button4 {
+        .buttons {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -99,17 +90,17 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        .button1, .button2  {
+        .yellow  {
             background-color: #ffdcaf;
         }
 
        
-        .button3, .button4 {
+        .pink {
             background-color: #feddd5;
 
         }
 
-        .button1:hover, .button2:hover, .button3:hover, .button4:hover {
+        .buttons:hover {
             background-color: #00866d;
             color: white;
         }
@@ -124,6 +115,7 @@
             justify-content: center;
             align-items: center;
             max-width: 700px;
+            
         }
 
         .toggle-radio:checked + .content {
@@ -134,21 +126,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
             gap: 30px;
             
         }
 
-        .button, .markerad {
+        .card {
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
            
             color: white;
             font-size: 15px;
             text-decoration: none;
             
-            width: 160px;
-            height: 50px;
-            padding: 20px;
+            width: 180px;
+            height: 100px;
+            padding: 10px 15px;
             
             border-radius: 10px;
             border: none;
@@ -157,38 +150,37 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        .button {
+        .card {
             background-color: #01332a;
         }
 
-        .button h3 {
+        .highlight {
+            background-color: #00866d;
+        }
+
+        .card h3 {
             font-size: 15px;
             font-weight: 600;
-            margin: 0;
+            margin: 7px 0 0 0;
             padding: 0;
         }
-        .button p {
-            text-align: center;
-            
+
+        .text-normal {
             font-size: 14px;
             line-height: 15px;
            
-            margin: 0;
+            margin: 10px 0 4px 0;
             padding: 0;
 
-            background-color: pink;
-
         }
 
-        .markerad {
-            background-color: #00866d;
-        }
-        
-        .content img {
-            width: 800px;
-            margin-top: 0;
-        }
+        .text-large {
+            font-size: 16px;
+            margin-top: 20px;
+            line-height: 17px;
+            padding: 0 20px;
 
+        }
     
     </style>
 </head>
@@ -204,13 +196,13 @@
         regelverken. De nuvarande reglerna för planering och projektering återfinns i två AFS:</p>
 
         <div class="flex">
-            <div class="flex-text1">
+            <div class="flex-text">
                 <h2>Viktiga förändringar</h2>
                 <p>Nedan bestämmelser har flyttats och omstrukturerats 
                 i de nya föreskrifterna:</p>
             </div>
 
-            <div class="flex-text2">
+            <div class="flex-text">
                 <h2>Överföring av övriga bestämmelser</h2>
                 <p>Övriga bestämmelser från AFS 1999:3 har 
                 hanterats enligt följande:</p>
@@ -219,60 +211,115 @@
         
         <div class="circle-container">
             <!-- VÄNSTER -->
-            <label class="button1" for="toggle1">§16 från AFS 1999:3</label>
-            <label class="button2" for="toggle2">Ansvaret för projektering under bruksskedet (tidigare i AFS 2020:1)</label>
+            <label class="buttons yellow" for="toggle1">§16 från AFS 1999:3</label>
+            <label class="buttons yellow" for="toggle2">Ansvaret för projektering under bruksskedet (tidigare i AFS 2020:1)</label>
 
             <!-- HÖGER -->
-            <label class="button3" for="toggle3">Bestämmelser som behandlar risker vid vissa typer av arbeten</label>
-            <label class="button4" for="toggle4">Kraven på arbetsplatsens utformning</label>
+            <label class="buttons pink" for="toggle3">Bestämmelser som behandlar risker vid vissa typer av arbeten</label>
+            <label class="buttons pink" for="toggle4">Kraven på arbetsplatsens utformning</label>
             
         </div>
 
+         <!-- BILD 1 -->
         <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/val1.png" alt="val 3">
-            
-        </div>
-
-        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/val2.png" alt="val 2">
-            
-        </div>
-
-        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+        
         <div class="content">
             <div class="illustration">
-                <div class="button">
+                
+                <div class="card highlight">
                     <h3>AFS 2023:3</h3>
-                    <p>Projektering och byggarbetsmiljösamordning 
+                    <p class="text-normal">Projektering och byggarbetsmiljösamordning 
                     – grundläggande skyldigheter</p>
-            </div>
-            <div>AFS 2023:12</div>
-            <div class="markerad">AFS 2023:13</div>
+                </div>
+                
+                <div class="card">
+                    <h3>AFS 2023:12</h3>
+                    <p class="text-large">Utformning av arbetsplatser</p>
+                </div>
+
+                <div class="card">
+                    <h3>AFS 2023:13</h3>
+                    <p class="text-large">Risker vid vissa typer av arbeten</p>
+                </div>
+
            </div>
-           <!--<img src="../images/val3.png" alt="val 3">-->
-           
         </div>
 
+        <!-- BILD 2 -->
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        
+        <div class="content">
+            <div class="illustration">
+                
+                <div class="card">
+                    <h3>AFS 2023:3</h3>
+                    <p class="text-normal">Projektering och byggarbetsmiljösamordning 
+                    – grundläggande skyldigheter</p>
+                </div>
+                
+                <div class="card highlight">
+                    <h3>AFS 2023:12</h3>
+                    <p class="text-large">Utformning av arbetsplatser</p>
+                </div>
+
+                <div class="card">
+                    <h3>AFS 2023:13</h3>
+                    <p class="text-large">Risker vid vissa typer av arbeten</p>
+                </div>
+
+           </div> 
+        </div>
+
+        <!-- BILD 3 -->
+        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+        
+        <div class="content">
+            <div class="illustration">
+                
+                <div class="card">
+                    <h3>AFS 2023:3</h3>
+                    <p class="text-normal">Projektering och byggarbetsmiljösamordning 
+                    – grundläggande skyldigheter</p>
+                </div>
+
+                <div class="card">
+                    <h3>AFS 2023:12</h3>
+                    <p class="text-large">Utformning av arbetsplatser</p>
+                </div>
+
+                <div class="card highlight">
+                    <h3>AFS 2023:13</h3>
+                    <p class="text-large">Risker vid vissa typer av arbeten</p>
+                </div>
+
+           </div>
+        </div>
+
+        <!-- BILD 4 -->
         <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
         
         <div class="content">
             <div class="illustration">
-                <div class="button">
+
+                <div class="card">
                 <h3>AFS 2023:3</h3>
-                <p>Projektering och byggarbetsmiljösamordning 
+                <p class="text-normal">Projektering och byggarbetsmiljösamordning 
                 – grundläggande skyldigheter</p>
-            </div>
-            <div class="markerad">AFS 2023:12</div>
-            <div class="button">AFS 2023:13</div>
+                </div>
+
+                <div class="card highlight">
+                    <h3>AFS 2023:12</h3>
+                    <p class="text-large">Utformning av arbetsplatser</p>
+                </div>
+
+                <div class="card">
+                    <h3>AFS 2023:13</h3>
+                    <p class="text-large">Risker vid vissa typer av arbeten</p>
+                </div>
+
            </div>
-           
-            <!-- <img src="../images/val2.png" alt="val 2">-->
-            
         </div>
 
-    
     </div>
 </body>
 </html>
