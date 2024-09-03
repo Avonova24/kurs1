@@ -8,12 +8,14 @@
     <style>
 		
 		.container {
-            text-align: center;
             justify-content: center;
             align-items: center;
+			text-align: center;
             padding-right: 16%;
             padding-left: 16%;
         }
+
+	
 		
 		.flexbox {
 			display: flex;
@@ -32,11 +34,18 @@
 		.content {
 			flex: 1.6; /* Tar upp 2/3 av utrymmet */
             box-sizing: border-box;
+			
 		}
 
         .content ul {
-            text-align: left;
+			
+            
         }
+
+		.content li {
+			flex-direction: column;
+			align-items: start;
+		}
 
 		.image-container {
 			display: flex;
@@ -170,6 +179,8 @@
         .text3 {
             margin-top: 8%;
         }
+
+	
 		
     </style>
 </head>
@@ -196,12 +207,13 @@
                     <li>Branschen har förändrats</li>
                     <li>EU-guiden till Byggplatsdirektivet 2010</li>
                     <li>Behov att förtydliga reglerna
-                        <ul class="bulletlevel2">
-                            <li>Oklarheter om arbetsmiljöansvar</li>
-                            <li>Bristfälligt arbetsmiljöarbete i tidigt skede</li>
-                        </ul>
-					</li>
+				</ul>
+                
+				<ul class="bulletlevel2">
+                    <li>Oklarheter om arbetsmiljöansvar</li>
+                    <li>Bristfälligt arbetsmiljöarbete i tidigt skede</li>
                 </ul>
+                
             </div>
             
             <div class="image-container">
