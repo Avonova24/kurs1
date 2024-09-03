@@ -21,7 +21,6 @@
             margin-bottom: 15px;
         }
 
-
         .buttons-container {
             display: flex;
             flex-wrap: wrap;
@@ -58,7 +57,6 @@
             transition: background-color 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
-
 
         .buttons:hover,
         .buttons:focus {
@@ -100,14 +98,11 @@
             align-items: center;
             max-width: 700px;
             flex-direction: column;
-            
         }
 
         .toggle-radio:checked + .content {
             display: flex;
         }
-
-       
     
     </style>
 </head>
@@ -125,78 +120,87 @@
         Observera att det finns fler roller än de som nämns i denna översikt, och alla dessa omfattas 
         av reglerna.</p>
 
-        
         <div class="buttons-container">
             <label class="buttons" for="toggle1">
-                <h2>Grundläggande regler</h2>
+                <div class="label-content">
+                    <h2>Grundläggande regler</h2>
+                </div>
             </label>
+
             <label class="buttons" for="toggle2">
-                <h2>AFS 2023:1</h2>
-                <p>Systematiskt arbetsmiljöarbete <br>– Grundläggande skyldigheter för arbetsgivare</p>
+                <div class="label-content">
+                    <h2>AFS 2023:1</h2>
+                    <p>Systematiskt arbetsmiljöarbete <br>– Grundläggande skyldigheter för arbetsgivare</p>
+                </div>
             </label>
+
             <label class="buttons" for="toggle3">
-                <h2>AFS 2023:2</h2>
-                <p>Planering och organisering av arbetsmiljöarbete – Grundläggande skyldigheter för arbetsgivare</p>
+                <div class="label-content">
+                    <h2>AFS 2023:2</h2>
+                    <p>Planering och organisering av arbetsmiljöarbete – Grundläggande skyldigheter för arbetsgivare</p>
+                </div>
             </label>
+
             <label class="buttons" for="toggle4">
-                <h2>AFS 2023:3</h2>
-                <p>Projektering och byggarbetsmiljösamordning – Grundläggande skyldigheter</p>
+                <div class="label-content">
+                    <h2>AFS 2023:3</h2>
+                    <p>Projektering och byggarbetsmiljösamordning – Grundläggande skyldigheter</p>
+                </div>
             </label>
         </div>
 
-            <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
-            
-            <div class="content"> 
-                <p> De grundläggande reglerna anger vilka skyldigheter som gäller för arbetsgivare och 
-                andra aktörer som byggherrar, projektörer och byggarbetsmiljösamordnare, oavsett 
-                verksamhetens typ.</p>
-            </div>
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+        <div class="content"> 
+            <p> De grundläggande reglerna anger vilka skyldigheter som gäller för arbetsgivare och 
+            andra aktörer som byggherrar, projektörer och byggarbetsmiljösamordnare, oavsett 
+            verksamhetens typ.</p>
+        </div>
 
-            <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
-           
-            <div class="content">
-                <p>Denna föreskrift gäller för alla arbetsgivare och beskriver arbetsgivarens ansvar att 
-                se till att de personer som får uppgifter har rätt resurser, befogenheter och kunskaper 
-                för att utföra sina uppgifter. Här inkluderas regler för arbetsmiljöpolicy, företagshälsovård 
-                och det systematiska arbetsmiljöarbetet, vilket innebär att undersöka, genomföra och följa 
-                upp verksamheten för att förebygga olyckor och ohälsa.
-                </p>
-            </div>
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        <div class="content">
+            <p>Denna föreskrift gäller för alla arbetsgivare och beskriver arbetsgivarens ansvar att 
+            se till att de personer som får uppgifter har rätt resurser, befogenheter och kunskaper 
+            för att utföra sina uppgifter. Här inkluderas regler för arbetsmiljöpolicy, företagshälsovård 
+            och det systematiska arbetsmiljöarbetet, vilket innebär att undersöka, genomföra och följa 
+            upp verksamheten för att förebygga olyckor och ohälsa.
+            </p>
+        </div>
 
-            <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
-           
-            <div class="content">
-                <p>Dessa föreskrifter syftar till att arbetsgivare ska planera, organisera och genomföra 
-                    arbetsmiljöarbetet för att förebygga ohälsa och olycksfall samt säkerställa en 
-                    tillfredsställande arbetsmiljö. Relevanta kapitel i denna föreskrift inkluderar:
-                <p>
-                    Kap. 2. Organisatorisk och social arbetsmiljö
-                    Kap. 3. Arbetsanpassning
-                    Kap. 4. Första hjälpen och krisstöd
-                    Kap. 5. Våld och hot om våld
-                    Kap. 6. Ensamarbete
-                    Kap. 7. Gravida, nyförlösta och ammande arbetstagare
-                    Kap. 8. Minderårigas arbetsmiljö
-                    Kap. 9. Anteckningar om jourtid, övertid och mertid
-                </p>
-                </p>
-            </div>
+        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+        <div class="content">
+            <p>Dessa föreskrifter syftar till att arbetsgivare ska planera, organisera och genomföra 
+                arbetsmiljöarbetet för att förebygga ohälsa och olycksfall samt säkerställa en 
+                tillfredsställande arbetsmiljö. Relevanta kapitel i denna föreskrift inkluderar:
+            </p>
+            <p>
+                Kap. 2. Organisatorisk och social arbetsmiljö<br>
+                Kap. 3. Arbetsanpassning<br>
+                Kap. 4. Första hjälpen och krisstöd<br>
+                Kap. 5. Våld och hot om våld<br>
+                Kap. 6. Ensamarbete<br>
+                Kap. 7. Gravida, nyförlösta och ammande arbetstagare<br>
+                Kap. 8. Minderårigas arbetsmiljö<br>
+                Kap. 9. Anteckningar om jourtid, övertid och mertid
+            </p>
+        </div>
 
-            <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
-            
-            <div class="content">
-               <p>Syftet med dessa föreskrifter är att under planeringen, projekteringen och samordningen 
-                av bygg- och anläggningsarbeten förebygga ohälsa och olycksfall, samt att skapa förutsättningar 
-                för en god arbetsmiljö både under bygg- och bruksskedet. Föreskriften är indelad i tre avdelningar:
-                
-                Avdelning I: Allmänna bestämmelser
-                Avdelning II: Aktörernas ansvar och uppgifter i byggprojektet
-                Avdelning III: Gemensamma bestämmelser om hur risker förebyggs
-                Avdelning II innehåller kapitel som behandlar ansvarsområden för olika aktörer, inklusive byggherrar, BAS-P, BAS-U, projektörer, arkitekter och konstruktörer, samt de som tillverkar monteringsfärdiga byggnader eller anläggningar. Avdelning III behandlar grundprinciper för att förebygga arbetsmiljörisker, planering och projektering för en säker arbetsmiljö under både byggskedet och bruksskedet, samt riktlinjer för arbetsmiljöplanen och överlämningen av arbetsmiljöarbetet.
-                </p>
-            </div>
-            
-       
+        <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
+        <div class="content">
+           <p>Syftet med dessa föreskrifter är att under planeringen, projekteringen och samordningen 
+            av bygg- och anläggningsarbeten förebygga ohälsa och olycksfall, samt att skapa förutsättningar 
+            för en god arbetsmiljö både under bygg- och bruksskedet. Föreskriften är indelad i tre avdelningar:
+           </p>
+           <p>
+            Avdelning I: Allmänna bestämmelser<br><br>
+            Avdelning II: Aktörernas ansvar och uppgifter i byggprojektet<br><br>
+            Avdelning III: Gemensamma bestämmelser om hur risker förebyggs<br><br>
+            Avdelning II innehåller kapitel som behandlar ansvarsområden för olika aktörer, inklusive byggherrar, BAS-P, BAS-U, projektörer, arkitekter och konstruktörer, samt de 
+            som tillverkar monteringsfärdiga byggnader eller anläggningar. Avdelning III behandlar 
+            grundprinciper för att förebygga arbetsmiljörisker, planering och projektering för en 
+            säker arbetsmiljö under både byggskedet och bruksskedet, samt riktlinjer för arbetsmiljöplanen 
+            och överlämningen av arbetsmiljöarbetet.
+            </p>
+        </div>
     </div>
 </body>
 </html>
