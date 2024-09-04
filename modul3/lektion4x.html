@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur och Innehåll i AFS 2023:3</title>
+	<link rel="stylesheet" href="../styles.css">
+    <style>
+
+        .container {
+            
+        }
+
+        h1, p {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            width: 100%;
+            max-width: 1000px;
+            
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            
+            background-color: #ffdcaf;
+            color: #005646;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            
+            width: 180px;
+            height: 100px;
+            padding: 20px;
+            
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .buttons:hover {
+            background-color: #00866d;
+            color: white;
+        }
+      
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 5px;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            flex-direction: column;
+            
+        }
+
+        .content ul {
+            margin-left: 15%;
+            text-align: left;
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+    
+		
+    </style>
+</head>
+	
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+       	</div>
+        <h1>Sammanhållen struktur för arbetsmiljöansvar</h1>
+        <p>Föreskrifterna i AFS 2023:3 följer en röd tråd genom alla kapitel, som gäller för samtliga 
+        aktörer i byggprojektet. Klicka på de gula knapparna för att se vad huvudprinciperna inkluderar. Texten visar sig längst ner på sidan.</p>
+        
+      
+        <div class="buttons-container">
+            <label class="buttons" for="toggle1">Förebygga arbetsmiljörisker</label>
+                    
+            <label class="buttons" for="toggle2">Samordna arbetsmiljöarbetet i byggprojektet</label>
+                    
+            <label class="buttons" for="toggle3">Kontrollera <br>och följa upp <br>arbetsmiljöarbetet</label>
+                    
+            <label class="buttons" for="toggle4">Arbetsmiljöplan <br>och arbetsmiljö-dokumentation</label>
+        </div>
+        
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+                    
+            <div class="content">
+                <ul>
+                    <li>Utveckla rutiner för arbetsmiljöarbetet</li>
+                    <li>Tidsplanera för att minimera risker</li>
+                </ul>
+            </div>
+        
+                    <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+                   
+                    <div class="content">
+                        <ul>
+                            <li>Organisera arbetet och informera alla inblandade</li>
+                            <li>Hantera tillfälliga och samverkande konstruktioner</li>
+                        </ul>
+                    </div>
+        
+                    <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+                   
+                    <div class="content">
+                        <ul>
+                            <li>Vidta nödvändiga åtgärder om brister upptäcks</li>
+                        </ul>
+                    </div>
+        
+                    <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
+                    
+                    <div class="content">
+                        <ul>
+                            <li>Säkerställ att arbetsmiljöplaner och dokumentation är på plats och uppdaterade</li>
+                        </ul>
+                    </div>
+	</div>
+</body>
+</html>
