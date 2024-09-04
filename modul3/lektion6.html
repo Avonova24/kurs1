@@ -3,32 +3,37 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byggherrens övergripande arbetsmiljöansvar</title>
+    <title>Vem är byggherren?</title>
 	<link rel="stylesheet" href="../styles.css">
     <style>
-      
-        .flexbox2 {
+
+        .container {
+            padding-right: 7%;
+        }
+
+        .flexbox1{
             display: flex;
         }
 
-        .column3 {
+        .flexbox1 {
+            margin-bottom: 30px;
+        }
+
+        .column1 {
+            flex: 1.3;
+            width: 100%;
+            padding-right: 5%;
+        }
+
+        .column2 {
             display: flex;
             justify-content: center;
             align-items: center;
             flex: 1;
-
-            padding-left: 0;
-            margin-left: 0;
-            margin-right: 5%;
         }
-        
-        .column4 {
-            flex: 1.1;
+
+        .column2 img {
             width: 100%;
-        }
-
-        .column3 img {
-            width: 80%;
         }
 		
     </style>
@@ -36,24 +41,27 @@
 	
 <body>
     <div class="container">
-        <div class="flexbox2">
+		<div class="flexbox1">
             
-            <div class="column3">
-                <img src="../images/nothanks.png" alt="Bygg, transport och jordbruk">
-            </div>
-            
-            <div class="column4">
-                <h1>Byggherren</h1>
+            <div class="column1">
+			    <div class="avonova-logo">
+                    <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+       		    </div>
+                   <h1>Vem är byggherren?</h1>
                 
-                <p>Enligt arbetsmiljölagen (3 kap. 6 §) är byggherre den som låter utföra ett byggnads- 
-                eller anläggningsarbete. Byggherrens ansvar och uppgifter i arbetsmiljöarbetet har utvecklats 
-                för att säkerställa att alla delar av projektet, från projektering till färdigställande, 
-                hanteras med hänsyn till arbetsmiljön.
-                </p>
+                   <p>Enligt arbetsmiljölagen (3 kap. 6 §) är byggherre den som låter utföra ett byggnads- 
+                   eller anläggningsarbete. Byggherrens ansvar och uppgifter i arbetsmiljöarbetet har utvecklats 
+                   för att säkerställa att alla delar av projektet, från projektering till färdigställande, 
+                   hanteras med hänsyn till arbetsmiljön.
+                   </p>              
+            </div>
+
+		    <div class="column2">
+                <img src="../images/utsattabranscher.png" alt="Bygg, transport och jordbruk">
             </div>
 
         </div>
-       
 	</div>
+
 </body>
 </html>
