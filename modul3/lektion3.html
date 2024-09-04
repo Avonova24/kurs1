@@ -1,124 +1,70 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Struktur och Innehåll i AFS 2023:3</title>
-	<link rel="stylesheet" href="../styles.css">
+    <title>Centrala krav i de nya arbetsmiljöreglerna</title>
+    <link rel="stylesheet" href="../styles.css">
+    
     <style>
 
         .container {
-            width: 100%;
-            padding-right: 7%;
-        }
-
-        .column1 h1 {
-            margin-bottom: 5%;
-        }
-
-        .flexbox1, .flexbox2 {
-            display: flex;
-        }
-
-       
-
-        .flexbox2 {
-            margin-right: 30px;
-        }
-
-
-        .column1 {
-            width: 100%;
-            flex: 1.4;
-            margin-right: 10%;
-        }
-
-        .column2 {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 400px;
-            flex: 1;
+            flex-direction: column;   
         }
 
-    
-
-        .column2 img {
-            width: 600px;
-            margin-top: 10%;
-            padding-right: 0;
+        h1, p  {
+            text-align: center;
+            padding-right: 15%;
+            padding-left: 15%;
         }
 
-        .column1 p {
-            margin-bottom: 7%;
-            margin-top: 7%;
-        }
-
-        .buttons-container {
+        .circle-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: start;
-            
-            width: 145%;
-            max-width: 1000px;
-            
-            gap: 15px;
-            margin-top: 20px;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
             margin-bottom: 40px;
+            max-width: 800px;
         }
 
-        .buttons {
+        .circle-button-green1, .circle-button-green2 {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            flex-direction: column;
             
-            background-color: #ffdcaf;
-            color: black;
+            color: white;
             font-size: 15px;
             text-decoration: none;
             
-            width: 180px;
-            height: 100px;
-            padding: 20px;
-            
-            border-radius: 10px;
+            width: 130px;
+            height: 130px;
+            padding: 14px;
+           
+            border-radius: 50%;
             border: none;
-            cursor: pointer;
             
+            cursor: pointer;
             transition: background-color 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-
-        .buttons:hover,
-        .buttons:focus {
+        .circle-button-green1 {
             background-color: #00866d;
         }
 
-        .buttons:hover h2,
-        .buttons:hover p,
-        .buttons:focus h2,
-        .buttons:focus p {
-            color: white; /* Ändra färg på både h2 och p till vitt vid hovring */
-        }
-
-        .buttons p {
-            font-size: 14px;
-            line-height: 17px;
-            margin: 5px 0 0 0;
-            padding: 0;
-            transition: color 0.3s ease;
+        .circle-button-green2 {
+            background-color: #01332a;
 
         }
 
-        .buttons h2 {
-            color: #005646;
-            font-size: 17px;
-            margin: 0;
-            padding: 0;
-            transition: color 0.3s ease;
+        .circle-button-green1:hover, .circle-button-green2:hover {
+            background-color: #aff0e5;
+            color: #01332a;
         }
 
         .toggle-radio {
@@ -127,119 +73,78 @@
 
         .content {
             display: none;
-            margin-top: 5px;
-            justify-content: center;
+            margin-top: 20px;
+            justify-content: space-between;
             align-items: center;
-            max-width: 800px;
-            flex-direction: column;
-            
-        }
-
-        .content ul {
-            margin-left: 15%;
-            text-align: left;
+            max-width: 700px;
         }
 
         .toggle-radio:checked + .content {
             display: flex;
         }
-    
-		
+
+        .content img {
+            width: 200px;
+            margin: 0;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 15px;
+            text-align: left;
+            padding: 0 5% 0 3%;
+            
+        }
     </style>
 </head>
-	
 <body>
     <div class="container">
-		<div class="flexbox1">
-            
-            <div class="column1">
-			    <div class="avonova-logo">
-                    <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
-       		    </div>
-                
-                <h1>Struktur och Innehåll i AFS 2023:3</h1>
-                <p>Föreskrifter för Projektering och Byggarbetsmiljösamordning (AFS 2023:3) 
-                är uppdelade i tre avdelningar:
-                </p>
-                
-                <ul>
-                    <li>Allmänna bestämmelser</li>
-                    <li>Aktörernas ansvar och uppgifter i byggprojektet</li>
-                    <li>Gemensamma bestämmelser för hur risker förebyggs</li>
-                </ul>
-
-                <p>Varje aktör har ett specifikt kapitel som beskriver deras ansvar och uppgifter. 
-                Dessutom finns det gemensamma kapitel som gäller för alla aktörer i byggprojektet. 
-                För att underlätta användningen av föreskrifterna har sökfunktionen förbättrats, 
-                vilket gör det enklare att hitta relevant information.</p> 
-                
-            </div>
-		    <div class="column2">
-                <img src="../images/strukturinnehall.png" alt="Människor som diskuterar ett byggprojekt">
-            </div>
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
+        <h1>Centrala krav i de nya arbetsmiljöreglerna</h1>
+        <p>De nya reglerna ställer krav på att alla aktörer i ett byggprojekt ska arbeta systematiskt 
+        med arbetsmiljö från ett tidigt skede. Arbetsmiljöarbetet ska påbörjas redan vid projektering 
+        och planering, och det är viktigt att följa grundprinciperna för arbetsmiljö genom hela projektet.</p>
         
-        <div class="flexbox2">
-           
-            <div class="column4">
-                <h1>Sammanhållen struktur för arbetsmiljöansvar</h1>
-                <p>Föreskrifterna i AFS 2023:3 följer en röd tråd genom alla kapitel, 
-                som gäller för samtliga aktörer i byggprojektet. Huvudprinciperna inkluderar:
-                </p>
-
-                <div class="buttons-container">
-                    <label class="buttons" for="toggle1">
-                        <h2>Förebygga arbetsmiljörisker</h2>
-                    </label>
-                    <label class="buttons" for="toggle2">
-                        <h2>Samordna arbetsmiljöarbetet i byggprojektet</h2>
-                    </label>
-                    <label class="buttons" for="toggle3">
-                        <h2>Kontrollera <br>och följa upp <br>arbetsmiljöarbetet</h2>
-                    </label>
-                    <label class="buttons" for="toggle4">
-                        <h2>Arbetsmiljöplan <br>och arbetsmiljö-dokumentation</h2>
-                    </label>
-                </div>
-        
-                    <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
-                    
-                    <div class="content">
-                        <ul>
-                            <li>Utveckla rutiner för arbetsmiljöarbetet</li>
-                            <li>Tidsplanera för att minimera risker</li>
-                        </ul>
-                    </div>
-        
-                    <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
-                   
-                    <div class="content">
-                        <ul>
-                            <li>Organisera arbetet och informera alla inblandade</li>
-                            <li>Hantera tillfälliga och samverkande konstruktioner</li>
-                        </ul>
-                    </div>
-        
-                    <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
-                   
-                    <div class="content">
-                        <ul>
-                            <li>Vidta nödvändiga åtgärder om brister upptäcks</li>
-                        </ul>
-                    </div>
-        
-                    <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
-                    
-                    <div class="content">
-                        <ul>
-                            <li>Säkerställ att arbetsmiljöplaner och dokumentation är på plats och uppdaterade</li>
-                        </ul>
-                    </div>
-               
-            </div>
+        <div class="circle-container">
+            <label class="circle-button-green1" for="toggle1">Anpassning</label>
+            <label class="circle-button-green2" for="toggle2">Samarbete, kontroll & uppföljning</label>
+            <label class="circle-button-green1" for="toggle3">Säkerhet & överlämning</label>
         </div>
 
-	</div>
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
+            <p>Arbetsmiljöåtgärderna måste anpassas efter projektets storlek, komplexitet och risknivå, 
+            och varje aktör behöver utveckla specifika rutiner för sitt arbetsmiljöarbete. Genom att ha 
+            välutvecklade rutiner kan arbetsmiljöarbetet startas snabbare och samordnas mer effektivt, 
+            vilket också bidrar till att man lär sig av tidigare projekt och kontinuerligt förbättrar 
+            säkerheten.
+            </p>
+        </div>
 
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
+            <p>Aktörerna ska samarbeta och bidra till organiseringen av arbetsmiljöarbetet från början 
+            av projektet. Det är också nödvändigt att kontinuerligt kontrollera och följa upp det 
+            förebyggande arbetsmiljöarbetet för att säkerställa att det fungerar som avsett. Om brister 
+            upptäcks är det avgörande att omedelbart vidta åtgärder, då utredningar ofta visar att risker 
+            har varit kända men inte åtgärdade.</p>
+        </div>
+
+        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
+            <p>Säkerheten vid arbete med tillfälliga och samverkande konstruktioner är särskilt viktig, 
+            då flera allvarliga olyckor har inträffat i Sverige på grund av brister i detta område. 
+            Slutligen ska arbetsmiljöarbetet överlämnas på ett strukturerat sätt vid projektets avslut, 
+            med byggherren som ansvarig för att detta sker och arbetsmiljösamordnaren som ansvarig för 
+            att det genomförs korrekt.</p>
+        </div>
+
+       
+    </div>
 </body>
 </html>

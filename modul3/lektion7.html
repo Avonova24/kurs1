@@ -3,48 +3,37 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byggherrens övergripande arbetsmiljöansvar</title>
+    <title>Vem är byggherren?</title>
 	<link rel="stylesheet" href="../styles.css">
     <style>
 
         .container {
-            width: 100%;
-            background-color: #f7e1c4;
-            
+            padding-right: 7%;
         }
-       
-        .flexbox3 {
+
+        .flexbox1{
+            display: flex;
+        }
+
+        .flexbox1 {
+            margin-bottom: 30px;
+        }
+
+        .column1 {
+            flex: 1.3;
+            width: 100%;
+            padding-right: 5%;
+        }
+
+        .column2 {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            flex: 1;
+        }
 
+        .column2 img {
             width: 100%;
-        }
-
-
-        .flexbox3 ul {
-            max-width: 100%;
-            
-        }
-
-        ul li {
-            margin-bottom: 0;
-
-        }
-
-        ul li:not(:last-child) {
-            margin-bottom: 4%; /* Mellanrum mellan list-element, förutom det sista */
-        }
-
-        .img-column {
-            margin-right: 3%;
-            margin-bottom: 5%;
-        }
-
-        .img-column img {
-            width: 300px;
-        
         }
 		
     </style>
@@ -52,30 +41,27 @@
 	
 <body>
     <div class="container">
-        <div class="flexbox3">
+		<div class="flexbox1">
             
-            <div class="img-column">
-                <img src="../images/reglerbyggherren.png" alt="Bygg, transport och jordbruk">
+            <div class="column1">
+			    <div class="avonova-logo">
+                    <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+       		    </div>
+                   <h1>Vem är byggherren?</h1>
+                
+                   <p>Enligt arbetsmiljölagen (3 kap. 6 §) är byggherre den som låter utföra ett byggnads- 
+                   eller anläggningsarbete. Byggherrens ansvar och uppgifter i arbetsmiljöarbetet har utvecklats 
+                   för att säkerställa att alla delar av projektet, från projektering till färdigställande, 
+                   hanteras med hänsyn till arbetsmiljön.
+                   </p>              
             </div>
 
-            <ul>
-                <li>Arbetet med att förebygga arbetsmiljörisker sker både under planeringen och projekteringen och under byggskedet.</li>
-                <li>Förhandsanmäla byggprojektet till Arbetsmiljöverket (gäller byggnads- och anläggningsarbeten av en viss omfattning).</li>
-                <li>Utse byggarbetsmiljösamordnare, Bas-P och Bas-U.</li>
-                <li>Se till att en arbetsmiljöplan upprättas innan byggarbetsplatsen etableras, om det krävs en sådan.</li>
-                <li>Att följa upp arbetsmiljöuppgifter är något som Bas-P och Bas-U ska göra genom hela byggprojektet.</li>
-                <li>Under både byggskedet och bruksskedet ska arbetsmiljöarbetet överlämnas på ett strukturerat sätt, baserat på det arbete som gjorts under projekteringen.</li>
-                <li>Aktörerna i projektet ska mötas och ha en dialog om arbetsmiljöfrågor.</li>
-                <li>Byggherren måste ha kontroll över arbetsmiljöarbetet i alla skeden av projektet och säkerställa att det finns tillräckliga resurser för att genomföra detta arbete. Detta baseras på:</li>
-                    <ul class="bulletlevel2">
-                        <li>Tidigare genomförda riskanalyser</li>
-                        <li>Bedömning av resurser som behövs</li>
-                        <li>Tidsplanering</li>
-                        <li>Identifierade arbetsrisker</li>
-                    </ul>
-            </ul>
+		    <div class="column2">
+                <img src="../images/utsattabranscher.png" alt="Bygg, transport och jordbruk">
+            </div>
+
         </div>
-    
 	</div>
+
 </body>
 </html>

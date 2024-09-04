@@ -1,70 +1,124 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbetsgivarens ansvar för en säker arbetsmiljö</title>
-    <link rel="stylesheet" href="../styles.css">
-    
+    <title>Struktur och Innehåll i AFS 2023:3</title>
+	<link rel="stylesheet" href="../styles.css">
     <style>
 
         .container {
+            width: 100%;
+            padding-right: 7%;
+        }
+
+        .column1 h1 {
+            margin-bottom: 5%;
+        }
+
+        .flexbox1, .flexbox2 {
+            display: flex;
+        }
+
+       
+
+        .flexbox2 {
+            margin-right: 30px;
+        }
+
+
+        .column1 {
+            width: 100%;
+            flex: 1.4;
+            margin-right: 10%;
+        }
+
+        .column2 {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;   
+            width: 400px;
+            flex: 1;
         }
 
-        h1, p  {
-            text-align: center;
-            padding-right: 15%;
-            padding-left: 15%;
+    
+
+        .column2 img {
+            width: 600px;
+            margin-top: 10%;
+            padding-right: 0;
         }
 
-        .circle-container {
+        .column1 p {
+            margin-bottom: 7%;
+            margin-top: 7%;
+        }
+
+        .buttons-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+            justify-content: start;
+            
+            width: 145%;
+            max-width: 1000px;
+            
+            gap: 15px;
+            margin-top: 20px;
             margin-bottom: 40px;
-            max-width: 800px;
         }
 
-        .circle-button-green1, .circle-button-green2 {
+        .buttons {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            flex-direction: column;
             
-            color: white;
+            background-color: #ffdcaf;
+            color: black;
             font-size: 15px;
             text-decoration: none;
             
-            width: 130px;
-            height: 130px;
-            padding: 14px;
-           
-            border-radius: 50%;
-            border: none;
+            width: 180px;
+            height: 100px;
+            padding: 20px;
             
+            border-radius: 10px;
+            border: none;
             cursor: pointer;
+            
             transition: background-color 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        .circle-button-green1 {
+
+        .buttons:hover,
+        .buttons:focus {
             background-color: #00866d;
         }
 
-        .circle-button-green2 {
-            background-color: #01332a;
+        .buttons:hover h2,
+        .buttons:hover p,
+        .buttons:focus h2,
+        .buttons:focus p {
+            color: white; /* Ändra färg på både h2 och p till vitt vid hovring */
+        }
+
+        .buttons p {
+            font-size: 14px;
+            line-height: 17px;
+            margin: 5px 0 0 0;
+            padding: 0;
+            transition: color 0.3s ease;
 
         }
 
-        .circle-button-green1:hover, .circle-button-green2:hover {
-            background-color: #aff0e5;
-            color: #01332a;
+        .buttons h2 {
+            color: #005646;
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+            transition: color 0.3s ease;
         }
 
         .toggle-radio {
@@ -73,85 +127,119 @@
 
         .content {
             display: none;
-            margin-top: 20px;
-            justify-content: space-between;
+            margin-top: 5px;
+            justify-content: center;
             align-items: center;
-            max-width: 700px;
+            max-width: 800px;
+            flex-direction: column;
+            
+        }
+
+        .content ul {
+            margin-left: 15%;
+            text-align: left;
         }
 
         .toggle-radio:checked + .content {
             display: flex;
         }
-
-        .content img {
-            width: 200px;
-            margin: 0;
-        }
-
-        .content p {
-            margin: 0;
-            font-size: 15px;
-            text-align: left;
-            padding: 0 5% 0 3%;
-            
-        }
+    
+		
     </style>
 </head>
+	
 <body>
     <div class="container">
-        <div class="avonova-logo">
-            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+		<div class="flexbox1">
+            
+            <div class="column1">
+			    <div class="avonova-logo">
+                    <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+       		    </div>
+                
+                <h1>Struktur och Innehåll i AFS 2023:3</h1>
+                <p>Föreskrifter för Projektering och Byggarbetsmiljösamordning (AFS 2023:3) 
+                är uppdelade i tre avdelningar:
+                </p>
+                
+                <ul>
+                    <li>Allmänna bestämmelser</li>
+                    <li>Aktörernas ansvar och uppgifter i byggprojektet</li>
+                    <li>Gemensamma bestämmelser för hur risker förebyggs</li>
+                </ul>
+
+                <p>Varje aktör har ett specifikt kapitel som beskriver deras ansvar och uppgifter. 
+                Dessutom finns det gemensamma kapitel som gäller för alla aktörer i byggprojektet. 
+                För att underlätta användningen av föreskrifterna har sökfunktionen förbättrats, 
+                vilket gör det enklare att hitta relevant information.</p> 
+                
+            </div>
+		    <div class="column2">
+                <img src="../images/strukturinnehall.png" alt="Människor som diskuterar ett byggprojekt">
+            </div>
         </div>
-        <h1>Arbetsgivarens ansvar för en säker arbetsmiljö</h1>
-        <p>Arbetsgivaren har huvudansvaret för arbetsmiljön och är skyldig att tillsammans med skyddsombud 
-        utveckla rutiner som säkerställer en säker och hälsosam arbetsmiljö. Arbetsgivaren måste vidta alla 
-        nödvändiga åtgärder för att förhindra att arbetstagarna drabbas av olyckor eller sjukdom, oavsett om 
-        arbetet utförs på en byggarbetsplats eller ett fast arbetsställe.</p>
         
-        <div class="circle-container">
-            <label class="circle-button-green1" for="toggle1">Riskbedömning</label>
-            <label class="circle-button-green2" for="toggle2">Rätt instruktioner & kompetens</label>
-            <label class="circle-button-green1" for="toggle3">Tillstånd & utrustning</label>
-            <label class="circle-button-green2" for="toggle4">Ansvarsfördelning</label>
+        <div class="flexbox2">
+           
+            <div class="column4">
+                <h1>Sammanhållen struktur för arbetsmiljöansvar</h1>
+                <p>Föreskrifterna i AFS 2023:3 följer en röd tråd genom alla kapitel, 
+                som gäller för samtliga aktörer i byggprojektet. Huvudprinciperna inkluderar:
+                </p>
+
+                <div class="buttons-container">
+                    <label class="buttons" for="toggle1">
+                        <h2>Förebygga arbetsmiljörisker</h2>
+                    </label>
+                    <label class="buttons" for="toggle2">
+                        <h2>Samordna arbetsmiljöarbetet i byggprojektet</h2>
+                    </label>
+                    <label class="buttons" for="toggle3">
+                        <h2>Kontrollera <br>och följa upp <br>arbetsmiljöarbetet</h2>
+                    </label>
+                    <label class="buttons" for="toggle4">
+                        <h2>Arbetsmiljöplan <br>och arbetsmiljö-dokumentation</h2>
+                    </label>
+                </div>
+        
+                    <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+                    
+                    <div class="content">
+                        <ul>
+                            <li>Utveckla rutiner för arbetsmiljöarbetet</li>
+                            <li>Tidsplanera för att minimera risker</li>
+                        </ul>
+                    </div>
+        
+                    <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+                   
+                    <div class="content">
+                        <ul>
+                            <li>Organisera arbetet och informera alla inblandade</li>
+                            <li>Hantera tillfälliga och samverkande konstruktioner</li>
+                        </ul>
+                    </div>
+        
+                    <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+                   
+                    <div class="content">
+                        <ul>
+                            <li>Vidta nödvändiga åtgärder om brister upptäcks</li>
+                        </ul>
+                    </div>
+        
+                    <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
+                    
+                    <div class="content">
+                        <ul>
+                            <li>Säkerställ att arbetsmiljöplaner och dokumentation är på plats och uppdaterade</li>
+                        </ul>
+                    </div>
+               
+            </div>
         </div>
 
-        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
-            <p>Arbetsgivaren ska genomföra en riskbedömning för varje ny arbetsplats. Resultaten ska 
-            överlämnas till BAS-U, som ansvarar för att samordna och planera arbetet så att inga nya 
-            risker skapas.
-            </p>
-        </div>
+	</div>
 
-        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
-            <p>Arbetsgivaren måste se till att arbetstagarna får de nödvändiga instruktionerna och att 
-            arbetsmiljöplanen presenteras för den egna personalen. Dessutom ska arbetsgivaren säkerställa 
-            att arbetstagarna har rätt kompetens för sina uppgifter och den utrustning de använder.</p>
-        </div>
-
-        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
-            <p>Det är arbetsgivarens ansvar att se till att arbetstagarna har de nödvändiga tillstånden för 
-            sina arbetsuppgifter, som till exempel för truck, asbesthantering eller lyftkranar. Arbetsgivaren 
-            måste också kontrollera att all utrustning är besiktigad och fri från anmärkningar.
-            <br><br>Arbetsgivaren har en skyldighet att säkerställa att arbetstagarna uppfyller de krav som ställs för 
-            deras specifika arbete. Om dessa krav inte uppfylls kan det leda till sanktionsavgifter. På 
-            byggarbetsplatsen behöver BAS-U veta vilka kompetenser arbetstagarna har och att de har giltiga tillstånd 
-            för att använda olika maskiner.</p>
-        </div>
-
-        <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
-            <p>Arbetsgivaransvaret är grundläggande för all planering i byggprojektet. Förutom arbetsgivaren har även 
-            byggherren, BAS-P och BAS-U ett arbetsmiljöansvar. Byggherren ska säkerställa att BAS-P och BAS-U har 
-            rätt kompetens och erfarenhet för sina uppdrag.</p>
-        </div>
-
-    </div>
 </body>
 </html>

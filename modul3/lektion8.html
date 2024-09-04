@@ -1,145 +1,81 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyckelfaktorer för en god arbetsmiljö</title>
-    <link rel="stylesheet" href="../styles.css">
-    
+    <title>Byggherrens övergripande arbetsmiljöansvar</title>
+	<link rel="stylesheet" href="../styles.css">
     <style>
 
         .container {
+            width: 100%;
+            background-color: #f7e1c4;
+            
+        }
+       
+        .flexbox3 {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;   
+            flex-direction: column;
+
+            width: 100%;
         }
 
-        h1, p  {
-            text-align: center;
-            padding-right: 20%;
-            padding-left: 20%;
-        }
 
-        .circle-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            
-            gap: 35px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            max-width: 800px;
-        }
-
-        .circle-button-green1, .circle-button-green2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            
-            color: white;
-            font-size: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            
-            width: 130px;
-            height: 130px;
-            padding: 14px;
-           
-            border-radius: 50%;
-            border: none;
-            
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .circle-button-green1 {
-            background-color: #00866d;
-        }
-
-        .circle-button-green2 {
-            background-color: #01332a;
-
-        }
-
-        .circle-button-green1:hover, .circle-button-green2:hover {
-            background-color: #aff0e5;
-            color: #01332a;
-        }
-
-        .toggle-radio {
-            display: none;
-        }
-
-        .content {
-            display: none;
-            margin-top: 0;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 700px;
-        }
-
-        .toggle-radio:checked + .content {
-            display: flex;
-        }
-
-        .content img {
-            width: 200px;
-            margin: 0;
-        }
-
-        .content p {
-            margin: 0;
-            font-size: 15px;
-            text-align: left;
-            padding: 0 5% 0 3%;
+        .flexbox3 ul {
+            max-width: 100%;
             
         }
+
+        ul li {
+            margin-bottom: 0;
+
+        }
+
+        ul li:not(:last-child) {
+            margin-bottom: 4%; /* Mellanrum mellan list-element, förutom det sista */
+        }
+
+        .img-column {
+            margin-right: 3%;
+            margin-bottom: 5%;
+        }
+
+        .img-column img {
+            width: 300px;
+        
+        }
+		
     </style>
 </head>
+	
 <body>
     <div class="container">
-        <div class="avonova-logo">
-            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
-        </div>
-        <h1>Nyckelfaktorer för en god arbetsmiljö</h1>
-        <p>För att säkerställa en god arbetsmiljö krävs ett antal viktiga insatser. 
-        <i>Klicka på knapparna för att läsa mer om varje insats</i></p>
-        
-        <div class="circle-container">
-            <label class="circle-button-green1" for="toggle1">Ett gott samarbete</label>
-            <label class="circle-button-green2" for="toggle2">Tydlig kommunikation & ledning</label>
-            <label class="circle-button-green1" for="toggle3">Närvaro</label>
-        </div>
+        <div class="flexbox3">
+            
+            <div class="img-column">
+                <img src="../images/reglerbyggherren.png" alt="Bygg, transport och jordbruk">
+            </div>
 
-        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
-            <p><b>Ett gott samarbete</b> 
-            <br>Främja samarbete och sociala kontakter genom att etablera bra arbetsprocesser och mötesforum 
-            där aktörerna kan dela information och diskutera viktiga frågor.</p>
+            <ul>
+                <li>Arbetet med att förebygga arbetsmiljörisker sker både under planeringen och projekteringen och under byggskedet.</li>
+                <li>Förhandsanmäla byggprojektet till Arbetsmiljöverket (gäller byggnads- och anläggningsarbeten av en viss omfattning).</li>
+                <li>Utse byggarbetsmiljösamordnare, Bas-P och Bas-U.</li>
+                <li>Se till att en arbetsmiljöplan upprättas innan byggarbetsplatsen etableras, om det krävs en sådan.</li>
+                <li>Att följa upp arbetsmiljöuppgifter är något som Bas-P och Bas-U ska göra genom hela byggprojektet.</li>
+                <li>Under både byggskedet och bruksskedet ska arbetsmiljöarbetet överlämnas på ett strukturerat sätt, baserat på det arbete som gjorts under projekteringen.</li>
+                <li>Aktörerna i projektet ska mötas och ha en dialog om arbetsmiljöfrågor.</li>
+                <li>Byggherren måste ha kontroll över arbetsmiljöarbetet i alla skeden av projektet och säkerställa att det finns tillräckliga resurser för att genomföra detta arbete. Detta baseras på:</li>
+                    <ul class="bulletlevel2">
+                        <li>Tidigare genomförda riskanalyser</li>
+                        <li>Bedömning av resurser som behövs</li>
+                        <li>Tidsplanering</li>
+                        <li>Identifierade arbetsrisker</li>
+                    </ul>
+            </ul>
         </div>
-
-        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
-            <p><b>Tydlig kommunikation och ledning</b> 
-            <br>Upprätta tydliga kommunikationskanaler som säkerställer att alla i projektet får relevant 
-            och korrekt information. Detta är en viktig del av ledningens ansvar för att styra 
-            arbetsmiljöarbetet.</p>
-        </div>
-
-        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
-            <p><b>Närvaro</b> 
-            <br>Ledningens närvaro på arbetsplatsen är avgörande för att skapa en god arbetskultur. 
-            Genom att vara närvarande kan ledningen ge återkoppling och snabbt identifiera vad som 
-            fungerar bra och vad som behöver förbättras.</p>
-        </div>
-
-    </div>
+    
+	</div>
 </body>
 </html>
