@@ -8,95 +8,6 @@
     
     <style>
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;   
-        }
-
-        h1, p  {
-            text-align: center;
-            padding-right: 5%;
-            padding-left: 5%;
-        }
-
-        .circle-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            
-            gap: 35px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            max-width: 800px;
-        }
-
-        .circle-button-green1, .circle-button-green2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            
-            color: white;
-            font-size: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            
-            width: 130px;
-            height: 130px;
-            padding: 14px;
-           
-            border-radius: 50%;
-            border: none;
-            
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .circle-button-green1 {
-            background-color: #00866d;
-        }
-
-        .circle-button-green2 {
-            background-color: #01332a;
-
-        }
-
-        .circle-button-green1:hover, .circle-button-green2:hover {
-            background-color: #aff0e5;
-            color: #01332a;
-        }
-
-        .toggle-radio {
-            display: none;
-        }
-
-        .content {
-            display: none;
-            margin-top: 0;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 700px;
-        }
-
-        .toggle-radio:checked + .content {
-            display: flex;
-        }
-
-        .content img {
-            width: 200px;
-            margin: 0;
-        }
-
-        .content p {
-            margin: 0;
-            font-size: 15px;
-            text-align: left;
-            padding: 0 5% 0 3%;
-            
-        }
     </style>
 </head>
 <body>
@@ -104,46 +15,14 @@
         <div class="avonova-logo">
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
-        <h1>Tidsplanering och arbetsmiljö i byggprojekt</h1>
-        <p>En effektiv tidsplanering är avgörande för att säkerställa en god arbetsmiljö på byggarbetsplatsen. 
-        En realistisk tidsplan, som anges i kapitel 2, 5–6 §§, kräver att man samlar in information från olika 
-        delar av projektet, inklusive materialproduktion och beslutsprocesser. Det är också viktigt att alla 
-        yrkesgrupper, till exempel elektriker som kommer in senare i projektet, har tillräckligt med tid för 
-        att utföra sitt arbete utan att äventyra säkerheten. Byggherren ansvarar för att bedöma rimligheten i 
-        tidsplanen och säkerställa att den inte påverkar arbetsmiljöarbetet negativt.</p> 
+        <h1>AFS 2023:3 kapitel 2, 5-6 §§</h1>
+        <p>En realistisk tidsplan, som anges i kapitel 2, 5–6 §§, kräver att man samlar in information 
+        från olika delar av projektet, inklusive materialproduktion och beslutsprocesser. Det är också 
+        viktigt att alla yrkesgrupper, till exempel elektriker som kommer in senare i projektet, har 
+        tillräckligt med tid för att utföra sitt arbete utan att äventyra säkerheten. Byggherren ansvarar 
+        för att bedöma rimligheten i tidsplanen och säkerställa att den inte påverkar arbetsmiljöarbetet 
+        negativt. </p> 
             
-        <p>Klicka på knapparna för att läsa mer om de viktigaste aspekterna:</p>
-        
-        <div class="circle-container">
-            <label class="circle-button-green1" for="toggle1">Realistisk tidsplan</label>
-            <label class="circle-button-green2" for="toggle2">Löpande uppföljning</label>
-            <label class="circle-button-green1" for="toggle3">Justeringar vid behov</label>
-        </div>
-
-        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
-            <p><b>Realistisk tidsplan</b> 
-            <br>Det är viktigt att skapa en tidsplan som är realistisk och tar hänsyn till alla delar 
-            av projektet, inklusive produktion av material och beslutsprocesser. En realistisk tidsplan 
-            innebär att man inte skyndar på arbetet på bekostnad av arbetsmiljön.</p>
-        </div>
-
-        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
-            <p><b>Löpande uppföljning</b> 
-            <br>Tidsplanen bör regelbundet följas upp ur ett arbetsmiljöperspektiv för att säkerställa 
-            att arbetsmiljöarbetet inte äventyras av tidskrav.</p>
-        </div>
-
-        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
-            <p><b>Justeringar vid behov</b> 
-            <br>Om det uppstår problem eller förseningar, bör tidsplanen justeras eller andra åtgärder 
-            vidtas för att undvika att arbetsmiljöarbetet blir lidande.</p>
-        </div>
 
     </div>
 </body>
