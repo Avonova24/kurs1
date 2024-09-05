@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tydliggöra ansvarsområden i byggprojektets arbetsmiljöarbetet</title>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;   
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+        h1, p  {
+            text-align: center;
+            padding-right: 15%;
+            padding-left: 15%;
+        }
+
+        .circle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            gap: 15px;
+            margin: 30px 0;
+            width: 677px;
+            max-width: 100%;
+        }
+
+        .circle-button-green1, .circle-button-green2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            
+            width: 130px;
+            height: 130px;
+            padding: 14px;
+           
+            border-radius: 50%;
+            border: none;
+            
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .circle-button-green1 {
+            background-color: #00866d;
+        }
+
+        .circle-button-green2 {
+            background-color: #01332a;
+
+        }
+
+        .circle-button-green1:hover, .circle-button-green2:hover {
+            background-color: #aff0e5;
+            color: #01332a;
+        }
+
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 0;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 700px;
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+
+        .content img {
+            width: 200px;
+            margin: 0;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 15px;
+            text-align: left;
+            padding: 0 5% 0 3%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+        </div>
+        <h1>Tydliggöra ansvarsområden i byggprojektets arbetsmiljöarbetet</h1>
+        <p>För att säkerställa ett effektivt arbetsmiljöarbete i byggprojekt är det avgörande att 
+        tydliggöra ansvarsområden. Klicka på knapparna nedan för att läsa mer om varje punkt:</p>
+        
+        <div class="circle-container">
+            <label class="circle-button-green1" for="toggle1">Ansvar för arbetsmiljöfrågor</label>
+            <label class="circle-button-green2" for="toggle2">Arbetsmiljö-kompetens</label>
+            <label class="circle-button-green1" for="toggle3">Gränsdragningar</label>
+            <label class="circle-button-green2" for="toggle4">Samordning av byggprojekt</label>
+        </div>
+
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
+            <p><b>Ansvar för arbetsmiljöfrågor</b> 
+            <br>Byggherren måste klargöra vem som ansvarar för arbetsmiljörelaterade frågor inom 
+            projektet. Detta inkluderar att tydligt ange vem eller vilka inom byggherrens egen 
+            organisation som har ansvar för att säkerställa att arbetsmiljöuppgifter utförs.
+        </p>
+        </div>
+
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
+            <p><b>Arbetsmiljökompetens</b> 
+            <br>Det är viktigt att de personer som ansvarar för arbetsmiljöfrågor har rätt kompetens 
+            för uppgiften.</p>
+        </div>
+
+        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
+            <p><b>Gränsdragningar</b> 
+            <br>Byggherren behöver tydliggöra gränsdragningar mellan olika byggprojekt som pågår 
+            samtidigt på samma geografiska område för att undvika konflikter och säkerställa en smidig 
+            samordning.</p>
+        </div>
+
+        <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Gränsdragning">
+            <p><b>Samordning av byggprojekt</b> 
+            <br>Om det finns flera byggherrar som arbetar på samma område, måste de komma överens om 
+            hur projekten ska samordnas för att säkerställa en god arbetsmiljö.</p>
+        </div>
+
+    </div>
+</body>
+</html>
