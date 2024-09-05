@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrollera och följa upp arbetsmiljöarbetet</title>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;   
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+        h1, p  {
+            text-align: center;
+            padding-right: 15%;
+            padding-left: 15%;
+        }
+
+        .circle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            gap: 15px;
+            margin: 30px 0;
+            width: 677px;
+            max-width: 100%;
+        }
+
+        .circle-button-green1, .circle-button-green2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            
+            width: 130px;
+            height: 130px;
+            padding: 14px;
+           
+            border-radius: 50%;
+            border: none;
+            
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .circle-button-green1 {
+            background-color: #00866d;
+        }
+
+        .circle-button-green2 {
+            background-color: #01332a;
+
+        }
+
+        .circle-button-green1:hover, .circle-button-green2:hover {
+            background-color: #aff0e5;
+            color: #01332a;
+        }
+
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 0;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 700px;
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+
+        .content img {
+            width: 200px;
+            margin: 0;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 15px;
+            text-align: left;
+            padding: 0 5% 0 3%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+        </div>
+        <h1>Kontrollera och följa upp arbetsmiljöarbetet</h1>
+        <p>Byggherren har ett ansvar för att kontinuerligt kontrollera och följa upp arbetsmiljöarbetet, 
+        särskilt vad gäller BAS-P och BAS-U. Klicka på knapparna nedan för att läsa mer om vad byggherren 
+        bör göra för att säkerställa att arbetsmiljöarbetet utförs korrekt:</p>
+        
+        <div class="circle-container">
+            <label class="circle-button-green1" for="toggle1">Säkerställa förutsättningar</label>
+            <label class="circle-button-green2" for="toggle2">Övervaka arbetsmiljöarbetet</label>
+            <label class="circle-button-green1" for="toggle3">Vidta åtgärder vid behov</label>
+        </div>
+
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
+            <p><b>Säkerställa förutsättningar</b> 
+            <br>Se till att både BAS-P och BAS-U har de nödvändiga förutsättningarna, såsom resurser 
+            och information, för att utföra sina uppgifter på ett effektivt sätt.</p>
+        </div>
+
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
+            <p><b>Övervaka arbetsmiljöarbetet</b> 
+            <br>Byggherren bör ha en plan för att övervaka arbetet, exempelvis genom stickprovskontroller. 
+            Det är viktigt att tidigt i projektet informera om att stickprovskontroller kommer att genomföras, 
+            samt vilka konsekvenser som gäller om reglerna inte följs.</p>
+        </div>
+
+        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
+            <p><b>Vidta åtgärder vid behov</b> 
+            <br>Om det visar sig att BAS-P eller BAS-U inte utför sina uppgifter som de ska, eller om arbetsmiljöproblem 
+            uppstår, måste byggherren se till att nödvändiga åtgärder vidtas för att upprätthålla en säker arbetsmiljö.</p>
+        </div>
+
+    </div>
+</body>
+</html>
