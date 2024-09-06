@@ -17,8 +17,8 @@
 
         h1, p  {
             text-align: center;
-            padding-right: 15%;
-            padding-left: 15%;
+            padding-right: 10%;
+            padding-left: 10%;
         }
 
         .circle-container {
@@ -32,19 +32,24 @@
         }
 
         .circle-button-green1, .circle-button-green2, .circle-button-green3 {
-            color: white;
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: none;
-            cursor: pointer;
-            font-size: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            
+            width: 130px;
+            height: 130px;
             padding: 14px;
+            
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
             text-decoration: none;
+            color: white;
+            
+            border-radius: 50%;
+            border: none;
+            
+            cursor: pointer;
             transition: background-color 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
@@ -73,10 +78,11 @@
 
         .content {
             display: none;
-            margin-top: 20px;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            
             max-width: 700px;
+            margin-top: 20px;  
         }
 
         .toggle-radio:checked + .content {
@@ -105,14 +111,15 @@
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
         <h1>Vanliga utmaningar i bygg- och anläggningsbranschen</h1>
-        <p>Klicka på de gröna knapparna nedan för att läsa mer om varje utmaning. Text visar sig längst ner på sidan.</p>
+        <p>Klicka på de olika <b>gröna knapparna</b> nedan för att läsa mer om varje utmaning. 
+        Text visar sig längst ner på sidan. Scrolla neråt om du inte ser den.</p>
         
         <div class="circle-container">
             <!-- FÖRSTA RADEN -->
             <label class="circle-button-green1" for="toggle1">Olycksdrabbad bransch</label>
             <label class="circle-button-green3" for="toggle2">Många aktörer</label>
-            <label class="circle-button-green2" for="toggle3">Underentreprenörer</label>
-            <label class="circle-button-green1" for="toggle4">Arbetslivskriminalitet</label>
+            <label class="circle-button-green2" for="toggle3">Under-entreprenörer</label>
+            <label class="circle-button-green1" for="toggle4">Arbetslivs-kriminalitet</label>
             
             <!-- ANDRA RADEN -->
             <label class="circle-button-green2" for="toggle5">Höga kostnader för dålig kvalitet</label>
