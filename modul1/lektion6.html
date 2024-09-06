@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbetsmiljöförordningen och skyddsorganisation</title>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;   
+        }
+
+        h1, p  {
+            text-align: center;
+            padding-right: 15%;
+            padding-left: 15%;
+        }
+
+        .circle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+
+        .circle-button-green1, .circle-button-green2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+            
+            width: 130px;
+            height: 130px;
+            padding: 14px;
+           
+            border-radius: 50%;
+            border: none;
+            
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .circle-button-green1 {
+            background-color: #00866d;
+        }
+
+        .circle-button-green2 {
+            background-color: #01332a;
+
+        }
+
+        .circle-button-green1:hover, .circle-button-green2:hover {
+            background-color: #aff0e5;
+            color: #01332a;
+        }
+
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 20px;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 700px;
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+
+        .content img {
+            width: 200px;
+            margin: 0;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 15px;
+            text-align: left;
+            padding: 0 5% 0 3%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+        </div>
+        <h1>Arbetsmiljöförordningen och skyddsorganisation</h1>
+        <p>Arbetsmiljöförordningen hjälper till att tolka arbetsmiljölagen i vissa delar och innehåller 
+        viktiga regler om skyddsombud och skyddskommittéer. I denna förordning kan du bland annat läsa 
+        om hur en arbetsskada ska anmälas, vad som måste anslås eller gälla på arbetsplatsen, vad rollerna 
+        BAS-U och BAS-P innebär samt vilka författningar som ska vara tillgängliga på arbetsplatsen.</p>
+        
+        <div class="circle-container">
+            <!-- FÖRSTA RADEN -->
+            <label class="circle-button-green1" for="toggle1">Skyddsombud</label>
+            <label class="circle-button-green2" for="toggle2">Skyddskommitté</label>
+        </div>
+
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
+            <p>Enligt Arbetsmiljöförordningen ska ett skyddsombud utses för en period av tre år. Den person 
+            som utses bör ha god insikt och intresse för arbetsmiljöfrågor och känna till sitt arbetsområde. 
+            Arbetsgivaren ska tydligt informera på arbetsplatsen om vem som är skyddsombud och vilka som ingår 
+            i skyddskommittén, om en sådan finns.</p>
+        </div>
+
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
+            <p>En skyddskommitté ska finnas på arbetsplatser med fler än 50 anställda, enligt 
+            arbetsmiljölagen. Denna kommitté består av representanter från både arbetsgivar- och 
+            arbetstagarsidan. Arbetsmiljöförordningen specificerar vilka som ska ingå i skyddskommittén, 
+            och minst ett skyddsombud ska vara representerat. Det anges också att skyddskommittén ska 
+            ha möte minst en gång var tredje månad.</p>
+        </div>
+
+       
+    </div>
+</body>
+</html>

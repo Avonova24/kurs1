@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbetsmiljöförordningen och skyddsorganisation</title>
+    <title>Vad styr arbetsmiljöarbetet?</title>
     <link rel="stylesheet" href="../styles.css">
     
     <style>
@@ -13,88 +13,184 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;   
+            
         }
 
         h1, p  {
             text-align: center;
-            padding-right: 15%;
-            padding-left: 15%;
+            
+            
         }
 
-        .circle-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 50px;
-            margin-top: 30px;
-            margin-bottom: 40px;
-            max-width: 800px;
+        h1 {
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
 
-        .circle-button-green1, .circle-button-green2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        h2 {
+            max-width: 600px;
+            font-size: 1.7em;
+            margin-top: 50px;
             text-align: center;
-            
-            color: white;
-            font-size: 15px;
-            text-decoration: none;
-            
-            width: 130px;
-            height: 130px;
-            padding: 14px;
-           
-            border-radius: 50%;
-            border: none;
-            
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .circle-button-green1 {
-            background-color: #00866d;
-        }
-
-        .circle-button-green2 {
-            background-color: #01332a;
 
         }
 
-        .circle-button-green1:hover, .circle-button-green2:hover {
-            background-color: #aff0e5;
-            color: #01332a;
+        .infotext {
+            max-width: 900px;
+            padding-bottom: 20px;
+            font-size: 18px;
         }
 
-        .toggle-radio {
-            display: none;
-        }
-
-        .content {
-            display: none;
+        .content-container {
+            max-width: 900px;
+            width: 100%;
+			display: flex;
+			justify-content: center;
             margin-top: 20px;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 700px;
+            margin-bottom: 20px;
         }
 
-        .toggle-radio:checked + .content {
-            display: flex;
-        }
+        .toggle-content {
+			display: none;
+			position: absolute;
+			opacity: 0;
+			max-width: 600px;
+			width: 70%;
+			text-align: left;
+			gap: 5px;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			transition: opacity 0.3s ease, position 0.3s ease;
+			margin: 0 -5% 0 0;
+            padding: 0;
+		}
 
-        .content img {
-            width: 200px;
-            margin: 0;
-        }
-
-        .content p {
-            margin: 0;
-            font-size: 15px;
+        .toggle-text {
+            max-width: 500px;
+            font-size: 16px;
             text-align: left;
-            padding: 0 5% 0 3%;
+			margin: 0 6% 0 0;
+            padding: 0;
+			flex: 1;
+
+		}
+
+        .toggle-container {
+			position: relative; /* Gör att innehållet inuti kan placeras absolut relativt denna container */
+            display: flex;
+            align-items: center;
+            max-width: 400px;
+            
+		}
+
+        .toggle-container img {
+            width: 100%;
             
         }
+
+
+        .button-container {
+            position: absolute;
+            top: 32%; /* Justera detta för att passa dina behov */
+            right: -10px; /* Justera detta för att passa dina behov */
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .button-container label {
+            display: block;
+            padding: 10px 20px;
+            background-color: #00866d;;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .button-container label:hover {
+            background-color: #aff0e5;
+            color: black;
+        }
+
+    
+
+        .toggle-checkbox {
+			display: none;
+		}
+
+
+		.toggle-checkbox:checked + .toggle-content {
+			display: flex;
+			position: static;
+			opacity: 1;
+		}
+
+        .flexbox {
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 0;
+        }
+
+        .flexbox p {
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            flex: 1.5;
+        }
+     
+
+        .content-box-1, .content-box-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .content-box-2 {
+            margin-top: 3%;
+        }
+
+        .content-box-1 img, .content-box-2 img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+
+            width: 100%; /* Fyll föräldraelementet */
+            max-width: 230px; /* Begränsa maxbredd */
+            aspect-ratio: 1 / 1; /* Bevara 1:1-förhållande, så det alltid är en kvadrat */
+            border-radius: 50%; /* Gör bilden rund */
+            
+            object-fit: cover; /* Gör så att bilden fyller den runda ytan */
+            overflow: hidden; /* Döljer innehåll utanför runda formen */
+            
+        }
+
+        
+        .content-box-1 img {
+            margin-left: 5%;
+
+        }
+        
+        .content-box-2 img {
+            margin-right: 5%;
+        }
+
+        .image-box img {
+            width: 500px;
+            margin-top: 13%;
+        }
+      
+        
     </style>
 </head>
 <body>
@@ -102,38 +198,75 @@
         <div class="avonova-logo">
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
-        <h1>Arbetsmiljöförordningen och skyddsorganisation</h1>
-        <p>Arbetsmiljöförordningen hjälper till att tolka arbetsmiljölagen i vissa delar och innehåller 
-        viktiga regler om skyddsombud och skyddskommittéer. I denna förordning kan du bland annat läsa 
-        om hur en arbetsskada ska anmälas, vad som måste anslås eller gälla på arbetsplatsen, vad rollerna 
-        BAS-U och BAS-P innebär samt vilka författningar som ska vara tillgängliga på arbetsplatsen.</p>
-        
-        <div class="circle-container">
-            <!-- FÖRSTA RADEN -->
-            <label class="circle-button-green1" for="toggle1">Skyddsombud</label>
-            <label class="circle-button-green2" for="toggle2">Skyddskommitté</label>
+        <h1>Vad styr arbetsmiljöarbetet?</h1>
+        <p class="infotext"> I Sverige stiftar riksdagen lagar enligt grundlagen, medan 
+        regeringen utfärdar förordningar som kompletterar dessa lagar. Myndigheter, som 
+        Arbetsmiljöverket, har sedan uppgiften att utfärda föreskrifter inom sina 
+        respektive områden. Arbetsmiljöverket har dessutom tillsynsansvar och arbetar 
+        för att förmedla lagstiftningen kring arbetsmiljö och arbetstid. 
+        <br><br> Klicka på de gröna knapparna ovanpå pyramiden för att läsa mer om respektive område. Text visar sig brevid.</p>
+    
+        <div class="content-container">
+            <input type="radio" id="toggle1" name="toggle" class="toggle-checkbox">
+			
+            <!--TEXTINNEHÅLL-->	
+            <div class="toggle-content">
+                <p class="toggle-text"><strong>Arbetsmiljölagen</strong> är en ramlag, vilket 
+                betyder att den ger en övergripande vägledning om vilka krav som ställs på arbetsmiljön 
+                och vilket ansvar olika aktörer har. 
+                
+                <br><br>Huvudansvaret ligger på <strong>arbetsgivaren</strong> 
+                som har skyldighet att göra allt som krävs för att förebygga ohälsa och olyckor på arbetsplatsen. 
+                
+                <br><br>Reglernas syfte är att ingen ska behöva skadas, drabbas av ohälsa eller omkomma på jobbet. 
+                Arbetsmiljöarbetet ska planeras och organiseras så att det kan bedrivas i en sund och säker miljö. 
+                
+                <br><br>För att skapa en god arbetsmiljö är samverkan mellan arbetsgivare och arbetstagare avgörande.</div>
+            
+            <input type="radio" id="toggle2" name="toggle" class="toggle-checkbox">
+            
+            <div class="toggle-content">
+                <p class="toggle-text"><strong>Förordningar</strong> utfärdas av regeringen och klargör 
+                hur lagar ska tillämpas i praktiken. Inom arbetsmiljöarbetet är förordningar ett viktigt verktyg för 
+                att omsätta och anpassa arbetsmiljölagen till olika branscher och arbetsmiljöer.</div>
+            
+            <input type="radio" id="toggle3" name="toggle" class="toggle-checkbox">
+            
+            <div class="toggle-content">
+                <p class="toggle-text"><strong>Föreskrifter</strong> utfärdas av Arbetsmiljöverket och kompletterar 
+                både arbetsmiljölagen och förordningarna. De innehåller detaljerade regler för specifika branscher eller 
+                arbetsmiljöfrågor och är juridiskt bindande.</div>
+    
+                <!--BILD OCH KNAPPAR-->	
+                <div class="toggle-container">
+                <img src="../images/eutriangel.png" alt="EU-flaggan i en triangelbild">
+                <div class="button-container">
+                    <label for="toggle1" class="toggle-button">Arbetsmiljölagen (AML)</label>
+                    <label for="toggle2" class="toggle-button">Förordningar</label>
+                    <label for="toggle3" class="toggle-button">Föreskrifter</label>
+                </div>
+            </div>
         </div>
 
-        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
-            <p>Enligt Arbetsmiljöförordningen ska ett skyddsombud utses för en period av tre år. Den person 
-            som utses bör ha god insikt och intresse för arbetsmiljöfrågor och känna till sitt arbetsområde. 
-            Arbetsgivaren ska tydligt informera på arbetsplatsen om vem som är skyddsombud och vilka som ingår 
-            i skyddskommittén, om en sådan finns.</p>
-        </div>
-
-        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
-        <div class="content">
-            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
-            <p>En skyddskommitté ska finnas på arbetsplatser med fler än 50 anställda, enligt 
-            arbetsmiljölagen. Denna kommitté består av representanter från både arbetsgivar- och 
-            arbetstagarsidan. Arbetsmiljöförordningen specificerar vilka som ska ingå i skyddskommittén, 
-            och minst ett skyddsombud ska vara representerat. Det anges också att skyddskommittén ska 
-            ha möte minst en gång var tredje månad.</p>
-        </div>
-
+        <h2 class="rubrik2">Europeiska ramverk för arbetsmiljö: EUs
+        Byggplatsdirektiv</h2>
        
+
+        <div class="flexbox">
+         
+
+            <div class="content-box-2">
+                <img src="../images/byggarbetare4.png" alt="Byggarbetare som står på ett fält">
+                <p>Som medlem i EU är Sverige skyldigt att anpassa sina lagar efter EU
+                direktiv. Ett sådant är Byggplatsdirektivet (92/57 EEG), som syftar till att 
+                främja säkerheten och hälsan för arbetstagare på byggarbetsplatser. Enligt 
+                inledningen av direktivet har brister i projektering och planering under 
+                förberedelsestadiet bidragit till över hälften av de olyckor som inträffat 
+                på byggarbetsplatser inom EU. Tillfälliga och rörliga arbetsplatser innebär 
+                särskilt stora risker för arbetstagarna.</p>
+            </div> 
+            
+        </div>
     </div>
 </body>
 </html>
