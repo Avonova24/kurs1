@@ -18,8 +18,6 @@
 
         h1, p  {
             text-align: center;
-            
-            
         }
 
         h1 {
@@ -27,27 +25,12 @@
             margin-bottom: 0;
         }
 
-        h2 {
-            max-width: 600px;
-            font-size: 1.7em;
-            margin-top: 50px;
-            text-align: center;
-
-        }
-
-        .infotext {
-            max-width: 900px;
-            padding-bottom: 20px;
-            font-size: 18px;
-        }
-
         .content-container {
             max-width: 900px;
             width: 100%;
 			display: flex;
 			justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 5%;
         }
 
         .toggle-content {
@@ -62,7 +45,7 @@
 			align-items: center;
 			justify-content: center;
 			transition: opacity 0.3s ease, position 0.3s ease;
-			margin: 0 -5% 0 0;
+			margin: 0;
             padding: 0;
 		}
 
@@ -88,7 +71,6 @@
             width: 100%;
             
         }
-
 
         .button-container {
             position: absolute;
@@ -118,8 +100,6 @@
             color: black;
         }
 
-    
-
         .toggle-checkbox {
 			display: none;
 		}
@@ -131,35 +111,14 @@
 			opacity: 1;
 		}
 
-        .flexbox {
-            max-width: 900px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 0;
-        }
-
-        .flexbox p {
-            text-align: left;
-            margin: 0;
-            padding: 0;
-            flex: 1.5;
-        }
-     
-
-        .content-box-1, .content-box-2 {
+        .content-box-1 {
             display: flex;
             justify-content: center;
             align-items: center;
 
         }
 
-        .content-box-2 {
-            margin-top: 3%;
-        }
-
-        .content-box-1 img, .content-box-2 img {
+        .content-box-1 img {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -179,10 +138,6 @@
         .content-box-1 img {
             margin-left: 5%;
 
-        }
-        
-        .content-box-2 img {
-            margin-right: 5%;
         }
 
         .image-box img {
@@ -204,7 +159,9 @@
         Arbetsmiljöverket, har sedan uppgiften att utfärda föreskrifter inom sina 
         respektive områden. Arbetsmiljöverket har dessutom tillsynsansvar och arbetar 
         för att förmedla lagstiftningen kring arbetsmiljö och arbetstid. 
-        <br><br> Klicka på de gröna knapparna ovanpå pyramiden för att läsa mer om respektive område. Text visar sig brevid.</p>
+        
+        <br><br><b>Klicka på de gröna knapparna ovanpå pyramiden för att läsa mer om 
+        respektive område. Text visar sig bredvid.</b></p>
     
         <div class="content-container">
             <input type="radio" id="toggle1" name="toggle" class="toggle-checkbox">
@@ -213,9 +170,7 @@
             <div class="toggle-content">
                 <p class="toggle-text"><strong>Arbetsmiljölagen</strong> är en ramlag, vilket 
                 betyder att den ger en övergripande vägledning om vilka krav som ställs på arbetsmiljön 
-                och vilket ansvar olika aktörer har. 
-                
-                <br><br>Huvudansvaret ligger på <strong>arbetsgivaren</strong> 
+                och vilket ansvar olika aktörer har. Huvudansvaret ligger på <strong>arbetsgivaren</strong> 
                 som har skyldighet att göra allt som krävs för att förebygga ohälsa och olyckor på arbetsplatsen. 
                 
                 <br><br>Reglernas syfte är att ingen ska behöva skadas, drabbas av ohälsa eller omkomma på jobbet. 
@@ -248,25 +203,6 @@
             </div>
         </div>
 
-        <h2 class="rubrik2">Europeiska ramverk för arbetsmiljö: EUs
-        Byggplatsdirektiv</h2>
-       
-
-        <div class="flexbox">
-         
-
-            <div class="content-box-2">
-                <img src="../images/byggarbetare4.png" alt="Byggarbetare som står på ett fält">
-                <p>Som medlem i EU är Sverige skyldigt att anpassa sina lagar efter EU
-                direktiv. Ett sådant är Byggplatsdirektivet (92/57 EEG), som syftar till att 
-                främja säkerheten och hälsan för arbetstagare på byggarbetsplatser. Enligt 
-                inledningen av direktivet har brister i projektering och planering under 
-                förberedelsestadiet bidragit till över hälften av de olyckor som inträffat 
-                på byggarbetsplatser inom EU. Tillfälliga och rörliga arbetsplatser innebär 
-                särskilt stora risker för arbetstagarna.</p>
-            </div> 
-            
-        </div>
     </div>
 </body>
 </html>
