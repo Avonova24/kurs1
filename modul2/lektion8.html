@@ -3,75 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbetsmiljöverkets förbättringar i regelverket</title>
+    <title>Grundläggande regler för arbetsgivare</title>
     <link rel="stylesheet" href="../styles.css">
+    
     <style>
-         
-      .content1 {
-        margin-top: 5%;
-      }
-		
-        ul {
-            margin-left: 5%;
-        }
-		
-       
-        .avonova-logo {
-            display: block;
-            margin-bottom: -10px;
-        }
-		
-	
-		p {
-            width: 100%;
-        
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;   
+            padding: 5% 15%;
         }
 
-        .textbox {
-            max-width: 800px;
-            margin-top: 5%;
+        h1 {
+            margin-bottom: 15px;
         }
-		
+
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            width: 145%;
+            max-width: 1000px;
+            
+            gap: 40px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            
+            background-color: #ffdcaf;
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+            
+            width: 170px;
+            height: 100px;
+            padding: 15px;
+            
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .buttons:hover,
+        .buttons:focus {
+            background-color: #00866d;
+        }
+
+        .buttons:hover h2,
+        .buttons:hover p,
+        .buttons:focus h2,
+        .buttons:focus p {
+            color: white; /* Ändra färg på både h2 och p till vitt vid hovring */
+        }
+
+        .buttons p {
+            font-size: 14px;
+            line-height: 17px;
+            margin: 5px 0 0 0;
+            padding: 0;
+            transition: color 0.3s ease;
+
+        }
+
+        .buttons h2 {
+            color: #005646;
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 5px;
+            justify-content: center;
+            align-items: center;
+            max-width: 700px;
+            flex-direction: column;
+            
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+
+        .lista {
+            text-align: left;
+            margin-left: 6%;
+        }
+
     </style>
 </head>
 <body>
-   <div class="container">
+    <div class="container">
         <div class="avonova-logo">
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
-        <h1>Arbetsmiljöverkets förbättringar i regelverket</h1>
-     
-        <div class="content1">
-            <p>Arbetsmiljöverket har genomfört följande förbättringar:</p>
-       
-            <ul>
-            <li>Delat upp en paragraf i flera mindre delar för ökad tydlighet.</li>
-            <li>Förenklat språket för att underlätta förståelse.</li>
-            <li>Ökat antalet definitioner för att göra reglerna mer klara.</li>
-            <li>Förtydligat ansvar och uppgifter – tydligare om vem som ska göra vad.</li>
-            </ul>
-        </div>
+        <h1>Grundläggande regler för arbetsgivare</h1>
+        <p>Arbetsgivare bör först och främst bekanta sig med de grundläggande reglerna som 
+        finns i två föreskrifter, vilka beskriver arbetsgivarens skyldigheter.</p>
 
-        <div class="textbox">
-            <p>Dessa förändringar har resulterat i att föreskrifterna har blivit enklare och kortare, 
-            vilket gör dem lättare att hitta, förstå och använda. 
+        
+        <div class="buttons-container">
             
-            <br><br>Många paragrafer har delats upp så att en paragraf inte längre innehåller flera krav. 
-            Till exempel har tidigare <b>§ 5a och § 5b i AFS 1993:3 kapitel 3</b> nu fördelats över flera mindre 
-            delar. Antalet definitioner har ökat till 21.
+            <label class="buttons" for="toggle1">
+                <h2>AFS 2023:1</h2>
+                <p>Systematiskt arbetsmiljöarbete</p>
+            </label>
             
-            <br><br>Samlingsbegreppet <b>"aktörer"</b> används nu för att beskriva alla som har ansvar i ett 
-            projekt. 
-            
-            <br><br>Begreppet <b>"byggprojekt"</b> täcker nu all projektering, planering och utförande som 
-            bidrar till att ett objekt färdigställs inom bygg- och anläggningsbranschen. Byggherren har ansvar 
-            för att säkerställa vissa aspekter, medan projektören har ansvar för andra.
-            </p>
-        </div>
+            <label class="buttons" for="toggle2">
+                <h2>AFS 2023:2</h2>
+                <p>Planering och organisering av arbetsmiljöarbete</p>
+            </label>
 
+            
+            <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+            <div class="content"> 
+                <p>Denna föreskrift innehåller regler för det systematiska arbetsmiljöarbetet (SAM).</p>
+            </div>
+
+            <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+            <div class="content">
+                <p>Planering och organisering av arbetsmiljöarbete (AFS 2023:2): Här finns regler för 
+                organisatorisk och social arbetsmiljö, första hjälpen, ensamarbete, hot och våld, samt 
+                förhållanden för gravida.
+                </p>
+            </div>
+        </div> 
        
-      
     </div>
-	
 </body>
 </html>
