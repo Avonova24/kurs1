@@ -17,8 +17,13 @@
         }
 
         ul {
-            margin-left: 5%;
+            margin-left: 7%;
         }
+
+        ul li:not(:last-child) {
+            margin-bottom: 25px; 
+        }
+
         .flexbox {
 			display: flex;
 			justify-content: center; /* Centrerar hela flexboxen horisontellt */
@@ -38,13 +43,14 @@
 		}
 
         .image-container {
-			flex: 1; /* Tar upp 1/3 av utrymmet */
+			flex: 1; 
+            max-width: 400px;
             
 		}
 
 		.image-container img {
 			width: 100%; /* Anpassar bildens storlek till image-container */
-            min-width: 340px;
+            min-width: 300px;
 
         }
 
