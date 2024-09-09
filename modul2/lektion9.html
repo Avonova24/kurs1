@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Den nya regelstrukturen</title>
+    <title>Grundläggande regler för arbetsgivare</title>
     <link rel="stylesheet" href="../styles.css">
     
     <style>
@@ -21,15 +21,6 @@
             margin-bottom: 15px;
         }
 
-        h2 {
-            font-size: 19px;
-        }
-
-        .lista {
-            text-align: left;
-            margin-left: 10%;
-
-        }
 
         .buttons-container {
             display: flex;
@@ -39,7 +30,7 @@
             width: 145%;
             max-width: 1000px;
             
-            gap: 15px;
+            gap: 40px;
             margin-top: 20px;
             margin-bottom: 40px;
         }
@@ -56,9 +47,9 @@
             font-size: 15px;
             text-decoration: none;
             
-            width: 180px;
+            width: 170px;
             height: 100px;
-            padding: 20px;
+            padding: 15px;
             
             border-radius: 10px;
             border: none;
@@ -67,6 +58,7 @@
             transition: background-color 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
+
 
         .buttons:hover,
         .buttons:focus {
@@ -108,12 +100,18 @@
             align-items: center;
             max-width: 700px;
             flex-direction: column;
+            
         }
 
         .toggle-radio:checked + .content {
             display: flex;
         }
-    
+
+        .lista {
+            text-align: left;
+            margin-left: 6%;
+        }
+
     </style>
 </head>
 <body>
@@ -121,47 +119,38 @@
         <div class="avonova-logo">
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
-        <h1>Projektering och byggarbetsmiljösamordning</h1>
-        <p>Klicka på det <b>gula kortet</b> för att se vad AFS 2023:1 innehåller och vilken 
-        eller vilka av de tidigare föresktifterna den ersätter.</p>
+        <h1>Grundläggande regler för arbetsgivare</h1>
+        <p>Arbetsgivare bör först och främst bekanta sig med de grundläggande reglerna som 
+        finns i två föreskrifter, vilka beskriver arbetsgivarens skyldigheter.</p>
 
+        
         <div class="buttons-container">
-
-            <label class="buttons" for="toggle1">
-                <div class="label-content">
-                    <h2>AFS 2023:3</h2>
-                    <p>Projektering och byggarbetsmiljösamordning – Grundläggande skyldigheter</p>
-                </div>
-            </label>
-        </div>
-
-        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
-        <div class="content">
-            <p><b>AFS 2023:1 Projektering och byggarbetsmiljösamordning</b> 
-            <br>- Grundläggande skyldigheter</p>
-
-            <p>Syftet med dessa föreskrifter är att under planeringen, projekteringen och samordningen 
-            av bygg- och anläggningsarbeten förebygga ohälsa och olycksfall, samt att skapa förutsättningar 
-            för en god arbetsmiljö både under bygg- och bruksskedet. 
-            </p>
-               
-            <h2>Föreskriften är indelad i tre avdelningar:</h2>
-            <p class="lista">
-            <b>Avdelning I:</b> Allmänna bestämmelser
-            <br><b>Avdelning II:</b> Aktörernas ansvar och uppgifter i byggprojektet
-            <br><br>Denna avdelning innehåller kapitel som behandlar ansvarsområden för olika aktörer, inklusive byggherrar, 
-            BAS-P, BAS-U, projektörer, arkitekter och konstruktörer, samt de som tillverkar monteringsfärdiga byggnader 
-            eller anläggningar. 
             
-            <br><br><b>Avdelning III:</b> Gemensamma bestämmelser om hur risker förebyggs<br><br>
-            Här behandlas grundprinciper för att förebygga arbetsmiljörisker, planering och projektering för en 
-            säker arbetsmiljö under både byggskedet och bruksskedet, samt riktlinjer för arbetsmiljöplanen 
-            och överlämningen av arbetsmiljöarbetet.
-                </p>
+            <label class="buttons" for="toggle1">
+                <h2>AFS 2023:1</h2>
+                <p>Systematiskt arbetsmiljöarbete</p>
+            </label>
+            
+            <label class="buttons" for="toggle2">
+                <h2>AFS 2023:2</h2>
+                <p>Planering och organisering av arbetsmiljöarbete</p>
+            </label>
+
+            
+            <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+            <div class="content"> 
+                <p>Denna föreskrift innehåller regler för det systematiska arbetsmiljöarbetet (SAM).</p>
             </div>
 
+            <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+            <div class="content">
+                <p>Planering och organisering av arbetsmiljöarbete (AFS 2023:2): Här finns regler för 
+                organisatorisk och social arbetsmiljö, första hjälpen, ensamarbete, hot och våld, samt 
+                förhållanden för gravida.
+                </p>
+            </div>
+        </div> 
        
-        </div>
     </div>
 </body>
 </html>
