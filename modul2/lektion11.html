@@ -3,175 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nya regler för projektering och byggarbetsmiljösamordning</title>
-	<link rel="stylesheet" href="../styles.css">
+    <title>Risker i arbetsmiljön</title>
+    <link rel="stylesheet" href="../styles.css">
+    
     <style>
-		
-		.container {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding-right: 16%;
-            padding-left: 16%;
+
+        .container {
+            display: flex;
+            flex-direction: column;   
+            padding: 5% 15%;
         }
-		
-		.flexbox {
-			display: flex;
-			justify-content: center; /* Centrerar hela flexboxen horisontellt */
-			align-items: center; /* Centrerar innehållet vertikalt */
-			width: 100%; /* Ser till att flexboxen täcker hela bredden av föräldern */
-			margin-top: 20px;
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        
+
+
+        .flexbox, .flexbox2 {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .flexbox {
+            gap: 10%;
+        }
+
+
+        .column1 {
             text-align: left;
-		}
-		
-		.content, .image-container {
-			width: 50%; /* Ser till att båda blocken tar upp halva bredden */
-			box-sizing: border-box; /* Inkluderar padding och border i elementens bredd */
-		}
-		
-		.content {
-			flex: 1.6; /* Tar upp 2/3 av utrymmet */
-            box-sizing: border-box;
-		}
+            flex-direction: column;
+            flex: 1.5;
 
-        .content ul {
-            text-align: left;
+
         }
 
-		.image-container {
-			display: flex;
-			justify-content: center; /* Centrerar bilden horisontellt inom image-container */
-			align-items: center; /* Centrerar bilden vertikalt inom image-container */
-            flex: 1; /* Tar upp 1/3 av utrymmet */
-			margin-right: -8%;
-            
-		}
-
-		.image-container img {
-			width: 450px; /* Anpassar bildens storlek till image-container */
+        .image-container {
+            flex: 1;
             
         }
 
-        /*Toogle styling*/
-
-        .button {
-			display: flex;
-			justify-content: flex-end;
-		}
-		
-		.button-link {
-			background-color: #00211b;
-			color: #aff0e5;
-			padding: 13px 40px;
-			font-size: 14px;
-			font-weight: bold;
-			text-align: center;
-			text-decoration: none;
-			border: none;
-			border-radius: 40px;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
-			display: inline-block;
-			margin-top: 50px;
-			border: 2px solid #00211b; /* Här lägger vi till linjen runt knappen */
-		}
-		
-		.button-link:hover {
-			background-color: #aff0e5;
-			color: #00211b;
-			border: 2px solid #00211b; /* Här lägger vi till linjen runt knappen */
-		}
-		
-		
-		.toggle-container {
-			display: flex;
-            align-items: center;
-            justify-content: center;
-            
-		}
-		
-		.buttons {
-			display: flex;
-			justify-content: center;
-			
-		}
-		
-		.toggle-button {
-			background-color: #e0fff9;
-			color: #00211b;
-			height: 120px;
-			width: 120px;
-			margin: 15px 10px 0 10px;
-			font-size: 14px;
-			font-weight: bold;
-			text-align: center;
-			line-height: 16px; /* Sätt line-height lika med höjden för perfekt vertikal centrering */
-			text-decoration: none;
-			border: 2px solid #00211b;
-			border-radius: 50%;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
-			display: flex;
-			justify-content: center; /* Centrerar texten horisontellt */
-			align-items: center; /* Centrerar texten vertikalt */
-			box-sizing: border-box; /* Säkerställer att padding och border inkluderas i storleken */
-		}
-
-		.toggle-button:hover {
-			background-color: #7eeedb;
-			color: #00211b;
-			border: 2px solid #00211b; /* Här lägger vi till linjen runt knappen */
-		}
-		
-		.toggle-checkbox {
-			display: none;
-		}
-
-		.content2 {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-		}
-
-		.toggle-content {
-			display: none;
-			position: absolute;
-			opacity: 0;
-			max-width: 800px;
-			width: 70%;
-			text-align: left;
-			gap: 20px;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-			transition: opacity 0.3s ease, position 0.3s ease;
-			margin: 30px 0 0;
-		}
-
-
-		.toggle-checkbox:checked + .toggle-content {
-			display: flex;
-			position: static;
-			opacity: 1;
-		}
-
-
-		.toggle-image {
-			max-width: 20%;
-			height: auto;
-			border-radius: 6%;
-		}
-		
-		.toggle-text {
-			font-size: 16px;
-			margin: 0;
-			flex: 1;
-		}
-
-        .text3 {
-            margin-top: 8%;
+        .image-container img {
+            width: 90%;
         }
-		
+
+        .flexbox2 {
+            align-items: start;
+            gap: 12%;
+        }
+
+        .left {
+            flex: 1.2;
+        }
+
+        .right {
+            flex: 1;
+        }
+
+    
     </style>
 </head>
 <body>
@@ -179,35 +70,47 @@
         <div class="avonova-logo">
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
-		
-		
-		<h1>Nya regler för projektering och byggarbetsmiljösamordning</h1>
-			
-		<p>Arbetsmiljöverkets föreskrifter och allmänna råd (AFS 2023:3) om projektering och 
-		byggarbetsmiljösamordning – grundläggande skyldigheter syftar till att förebygga ohälsa 
-		och olycksfall under både bygg- och bruksskedet samt att skapa förutsättningar för en god 
-		arbetsmiljö vid utformningen av arbetsplatser.
-		</p>
-	
+        <h1>AFS 2023:10 Risker i arbetsmiljön</h1>
+        
         <div class="flexbox">
-            <div class="content">
-                <p>De nya reglerna innehåller tydligare bestämmelser om att:</p>
-                <ul>
-                    <li>Förebygga risker så tidigt som möjligt i bygg- och anläggningsprojekt</li>
-                    <li>Övergripande organisera och skapa förutsättningar för en god arbetsmiljö</li>
-                    <li>Samordna och organisera bygg- och anläggningsprojekt</li>
-					<li>Kontrollera och följa upp arbetsmiljöarbetet</li>
-                </ul>
+            <div class="column1">
+                <p>När arbetsgivare eller motsvarande respektive byggherrar, projektörer eller
+                byggarbetsmiljösamordnare har tagit del av de grundläggande reglerna ska de därefter
+                identifiera vilka arbetsmiljörisker som finns i verksamheten och där arbete ska utföras 
+                och använda de regler som gäller för dem.</p>
             </div>
-            
+
             <div class="image-container">
-                <img src="../images/afsbild2.png" alt="Illustration AFS">
+                <img src="../images/tidsplanering.png" alt="Kalender, penna och klocka">
             </div>
-	    </div>
-        <p>Reglerna gäller för byggherrar, projektörer (inklusive arkitekter, konstruktörer och andra
-		medverkande), byggarbetsmiljösamordnare samt tillverkare av monteringsfärdiga byggnader eller 
-		anläggningar.</p>
-	
+        </div>
+
+        <h2>Vad ersätter den?</h2>
+        <p>AFS 2023:10 Risker i arbetsmiljön innehåller nu de tidigare AFS som omhandlar risker. <b>Se översikt nedan:</b></p>
+        <div class="flexbox2">
+            <p class="left">AFS 2005:16 – Buller
+                <br>AFS 2005:15 – Vibrationer
+                <br>AFS 1981:14 – Skydd mot skada genom fall
+                <br>AFS 1981:15 – Skydd mot skada genom ras
+                <br>AFS 2012:2 – Belastningsergonomi
+                <br>AFS 2011:19 – Kemiska arbetsmiljörisker
+                <br>AFS 2015:2 – Kvarts – stendamm i arbetsmiljön
+                <br>AFS 2004:1 – Syntetiska oorganiska fibrer
+                <br>AFS 2003:3 – Arbete i explosionsfarlig miljö
+                <br>AFS 2018:4 – Smittrisker
+            </p>
+
+            <p class="right">AFS 2009:7 – Artificiell optisk strålning
+                <br>AFS 2016:3 – Elektromagnetiska fält
+                <br>AFS 2001:7 – Anestesigaser
+                <br>AFS 1998:6 – Bekämpningsmedel
+                <br>AFS 1997:7 – Gaser
+                <br>AFS 1988:4 – Blybatterier
+                <br>AFS 2005:5 - Cytostatika och andra läkemedel med bestående toxisk effekt
+                <br>AFS 2018:4 – Smittrisker
+            </p>
+
+        </div>
     </div>
 </body>
 </html>

@@ -36,10 +36,24 @@ body {
 
 /*TEXTELEMENT*/
 
-h1, h2 {
+h1, h2, h3 {
 	color: #005646;
+}
+
+h1 {
 	font-size: 2em;
 }
+
+h2 {
+	font-size: 1.5em;
+
+}
+
+h3 { 
+	font-size: 1em;
+}
+
+
 
 p {
 	line-height: 1.5;
