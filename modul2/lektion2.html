@@ -3,20 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakgrund till AFS</title>
-	<link rel="stylesheet" href="../styles.css">
+    <title>Vilka roller har ni?</title>
+    <link rel="stylesheet" href="../styles.css">
+    
     <style>
-		
-		.container {
-			text-align: center;
 
+        .container {
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        ul {
+            margin-left: 7%;
+        }
+
+        ul li:not(:last-child) {
+            margin-bottom: 25px; 
+        }
+
+        .flexbox {
+			display: flex;
+			justify-content: center; /* Centrerar hela flexboxen horisontellt */
+			align-items: center; /* Centrerar innehållet vertikalt */
+			width: 100%; /* Ser till att flexboxen täcker hela bredden av föräldern */
+		}
+		
+		.content, .image-container {
+			width: 50%; /* Ser till att båda blocken tar upp halva bredden */
+			box-sizing: border-box; /* Inkluderar padding och border i elementens bredd */
+		}
+		
+		.content {
+			flex: 1.5; /* Tar upp 2/3 av utrymmet */
+            box-sizing: border-box;
+			
+		}
+
+        .image-container {
+			flex: 1; 
+            max-width: 400px;
+            
 		}
 
 		.image-container img {
-			width: 70%; /* Bevarar bildens storlek */
-			margin-top: 0;
-		}
-		
+			width: 100%; /* Anpassar bildens storlek till image-container */
+            min-width: 300px;
+
+        }
+
     </style>
 </head>
 <body>
@@ -24,21 +61,31 @@
         <div class="avonova-logo">
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
-		
-		
-		<h1>Arbetsmiljöverkets författningssamling <br>- Bakgrund till AFS</h1>
-			
-		<p>Arbetsmiljöverkets författningssamling (AFS) är en omfattande samling av 
-		föreskrifter och allmänna råd som styr arbetsmiljön i Sverige.</p>
-		<p>Dagens 67 föreskrifter kommer att slås ihop till 15 mer omfattande föreskrifter. 
-		De 2 300 paragraferna i de nuvarande 67 föreskriftshäftena kommer att omorganiseras 
-		och ingå i 15 nya föreskriftshäften. De nya reglerna träder i kraft den 1 januari 2025, 
-		det vill säga att det är då de börjar gälla. </p>
-	
-		
-		<div class="image-container">
-            <img src="../images/illustration.png" alt="Illustration AFS">
+        
+        <h1>Vilka roller har ni?</h1>
+        <p>På nästa sida kommer du se en översikt över den nya regelstrukturen. Översiktsbilden visar hur 
+        föreskrifter och allmänna råd har sorterats in i den nya strukturen med <b>15 stycken föreskriftshäften</b>, istället 
+        för <b>67 stycken</b>. I bilden syns de allra vanligaste rollerna som har ett ansvar att följa reglerna.</p>
+            
+        <div class="flexbox">
+            <div class="content">
+                <h2>Rollerna är:</h2>
+                <ul>
+                    <li>Arbetsgivare</li>
+                    <li>Byggherre, projektör eller byggarbetsmiljösamordnare</li>
+                    <li>Tillverkare, importör eller distributör av vissa produkter.</li>
+                </ul>
+            </div>
+
+            <div class="image-container">
+                <img src="../images/lektion6_bild1.png" alt="Tre stycken byggarbetare">
+            </div>
         </div>
-	</div>
+
+        <p>Det är viktigt att identifiera vilka roller ni har inom organisationen, eftersom dessa påverkar 
+        ert ansvar att följa reglerna. Skyddsombud och arbetsmiljöombud spelar centrala roller i 
+        arbetsmiljöarbetet, men de har inte samma ansvar. För att säkerställa en god arbetsmiljö behöver 
+        arbetsgivaten samverka med både skyddsombud och arbetstagare gällande arbetsmiljöarbetet.</p>
+    </div>
 </body>
 </html>

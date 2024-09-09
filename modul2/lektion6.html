@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vilka roller har ni?</title>
+    <title>AFS 2023:3 kapitel 2, 5-6 §§</title>
     <link rel="stylesheet" href="../styles.css">
-    
     <style>
-
+		
         .container {
-            text-align: left;
-        }
-
-        h2 {
-            font-size: 25px;
-        }
-
-        ul {
-            margin-left: 7%;
-        }
-
-        ul li:not(:last-child) {
-            margin-bottom: 25px; 
-        }
-
-        .flexbox {
-			display: flex;
-			justify-content: center; /* Centrerar hela flexboxen horisontellt */
-			align-items: center; /* Centrerar innehållet vertikalt */
-			width: 100%; /* Ser till att flexboxen täcker hela bredden av föräldern */
-		}
-		
-		.content, .image-container {
-			width: 50%; /* Ser till att båda blocken tar upp halva bredden */
-			box-sizing: border-box; /* Inkluderar padding och border i elementens bredd */
-		}
-		
-		.content {
-			flex: 1.5; /* Tar upp 2/3 av utrymmet */
-            box-sizing: border-box;
-			
-		}
-
-        .image-container {
-			flex: 1; 
-            max-width: 400px;
+            display: flex;
+            justify-content: center;
             
-		}
+            padding-left: 10%;
+            padding-right: 3%;
+            overflow: hidden; 
+            flex-direction: column;
+        }
 
+        h1 {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-top: 10px;
+            font-weight: 200;
+
+        }
+		
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex: 1.5; 
+            gap: 5%;
+
+        }
+		
+        .column1 {
+            flex: 1.5;
+        }
+
+        .column2 {
+            flex: 1;
+        }
+
+		.image-container {
+            flex: 1; /* Tar upp halva bredden av containern */
+            overflow: hidden;
+            line-height: 0;
+			
+		} 
+		
 		.image-container img {
-			width: 100%; /* Anpassar bildens storlek till image-container */
-            min-width: 300px;
-
+			width: 70%;
         }
 
     </style>
 </head>
+	
 <body>
     <div class="container">
-        <div class="avonova-logo">
-            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
-        </div>
-        
-        <h1>Vilka roller har ni?</h1>
-        <p>På nästa sida kommer du se en översikt över den nya regelstrukturen. Översiktsbilden visar hur 
-        föreskrifter och allmänna råd har sorterats in i den nya strukturen med <b>15 stycken föreskriftshäften</b>, istället 
-        för <b>67 stycken</b>. I bilden syns de allra vanligaste rollerna som har ett ansvar att följa reglerna.</p>
+
+                <div class="avonova-logo">
+                    <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+                </div>
             
-        <div class="flexbox">
-            <div class="content">
-                <h2>Rollerna är:</h2>
-                <ul>
-                    <li>Arbetsgivare</li>
-                    <li>Byggherre, projektör eller byggarbetsmiljösamordnare</li>
-                    <li>Tillverkare, importör eller distributör av vissa produkter.</li>
-                </ul>
+                <div class="content">
+                    <div class="column1"> 
+                        <h1>AFS 2023:3 Projektering och byggarbetsmiljösamordning</h1>
+                    <h3>– Grundläggande skyldigheter</h3>
+                    
+                <p>Syftet med dessa föreskrifter är att under planeringen, projekteringen och samordningen 
+                av bygg- och anläggningsarbeten förebygga ohälsa och olycksfall, samt att skapa förutsättningar 
+                för en god arbetsmiljö både under bygg- och bruksskedet. 
+                </p>
             </div>
 
-            <div class="image-container">
-                <img src="../images/lektion6_bild1.png" alt="Tre stycken byggarbetare">
+            <div class="column2">
+                <div class="image-container">
+                    <img src="../images/tidsplanering.png" alt="Kalender, penna och klocka">
+                </div>
             </div>
         </div>
+                       
+            <h2>Föreskriften är indelad i tre avdelningar:</h2>
+            <p><b>Avdelning I:</b> Allmänna bestämmelser
+            <br><b>Avdelning II:</b> Aktörernas ansvar och uppgifter i byggprojektet
+            <br><br>Denna avdelning innehåller kapitel som behandlar ansvarsområden för olika aktörer, inklusive byggherrar, 
+            BAS-P, BAS-U, projektörer, arkitekter och konstruktörer, samt de som tillverkar monteringsfärdiga byggnader 
+            eller anläggningar. 
+                    
+            <br><br><b>Avdelning III:</b> Gemensamma bestämmelser om hur risker förebyggs<br><br>
+            Här behandlas grundprinciper för att förebygga arbetsmiljörisker, planering och projektering för en 
+            säker arbetsmiljö under både byggskedet och bruksskedet, samt riktlinjer för arbetsmiljöplanen 
+            och överlämningen av arbetsmiljöarbetet.</p>
 
-        <p>Det är viktigt att identifiera vilka roller ni har inom organisationen, eftersom dessa påverkar 
-        ert ansvar att följa reglerna. Skyddsombud och arbetsmiljöombud spelar centrala roller i 
-        arbetsmiljöarbetet, men de har inte samma ansvar. För att säkerställa en god arbetsmiljö behöver 
-        arbetsgivaten samverka med både skyddsombud och arbetstagare gällande arbetsmiljöarbetet.</p>
+            <h2>Vad ersätter den?</h2>
+            <p><b>FS 2020:1</b> Arbetsplatsens utformning (de delar som handlar om byggarbetsmiljösamordning, planering och projektering för bruksskedet) 
+            <br><br><b>AFS 1999:3</b> Byggnads-och anläggningsarbete (de delar som inte berör arbetsgivare).</p>
+            
+
     </div>
 </body>
 </html>

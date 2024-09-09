@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varför ska vi ha en ny regelstruktur?</title>
+	<link rel="stylesheet" href="../styles.css">
+    <style>	
+
+		.flexbox {
+			display: flex;
+			justify-content: center; /* Centrerar hela flexboxen horisontellt */
+			align-items: center; /* Centrerar innehållet vertikalt */
+			width: 100%; /* Ser till att flexboxen täcker hela bredden av föräldern */
+			margin-top: 20px;
+            text-align: left;
+		}
+		
+		.content, .image-container {
+			width: 50%; /* Ser till att båda blocken tar upp halva bredden */
+			box-sizing: border-box; /* Inkluderar padding och border i elementens bredd */
+		}
+		
+		.content {
+			flex: 1.5; /* Tar upp 2/3 av utrymmet */
+            box-sizing: border-box;
+			
+		}
+
+		.content li {
+			flex-direction: column;
+			align-items: start;
+		}
+
+		.image-container {
+			flex: 1; /* Tar upp 1/3 av utrymmet */
+            
+		}
+
+		.image-container img {
+			width: 100%; /* Anpassar bildens storlek till image-container */
+
+        }
+		
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+        </div>
+		
+		<h1>Varför ska vi ha en ny regelstruktur?</h1>
+			
+		<p>Efter att Sverige hade uppdaterat sina arbetsmiljöföreskrifter, 
+        publicerades en EU-guide 2010 som påpekade att det fortfarande saknades vissa riktlinjer 
+        för förberedelsearbetet. Intervjuer visade också att föreskriften Byggnads- och anläggningsarbete (AFS 1993:3) 
+		behövde uppdateras för att bättre återspegla de aktuella arbetsmiljöutmaningarna. De nya 
+		reglerna införs därför för att underlätta för arbetsgivare, byggarbetsmiljösamordnare och andra 
+        berörda att snabbt hitta rätt information och förstå sina skyldigheter. </p>
+	
+        <div class="flexbox">
+            <div class="content">
+                <p>Det finns flera skäl till varför reglerna måste uppdateras:</p>
+                <ul>
+                    <li>Branschen har förändrats</li>
+                    <li>EU-guiden till Byggplatsdirektivet 2010</li>
+                    <li>Behov att förtydliga reglerna
+				</ul>
+                
+				<ul class="bulletlevel2">
+                    <li>Oklarheter om arbetsmiljöansvar</li>
+                    <li>Bristfälligt arbetsmiljöarbete i tidigt skede</li>
+                </ul>
+                
+            </div>
+            
+            <div class="image-container">
+                <img src="../images/afsbild.png" alt="Illustration AFS">
+            </div>
+	    </div>
+        <p>Arbetsgivare och andra ansvariga behöver nu lära sig den nya strukturen, 
+        uppdatera sina policys och rutiner, och se till att de följer de nya reglerna innan 
+        de börjar gälla den <b>1 januari 2025.</b></p>
+    </div>
+</body>
+</html>
