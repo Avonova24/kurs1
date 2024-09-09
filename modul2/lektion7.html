@@ -22,6 +22,15 @@
             margin-bottom: 15px;
         }
 
+        h2 {
+            font-size: 19px;
+        }
+
+        .lista {
+            text-align: left;
+
+        }
+
         .buttons-container {
             display: flex;
             flex-wrap: wrap;
@@ -101,6 +110,22 @@
             flex-direction: column;
         }
 
+        .flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 10%;
+            width: 130%;
+
+        }
+
+        .column1, .column2 {
+            text-align: left;
+            flex-direction: column;
+
+
+        }
+
         .toggle-radio:checked + .content {
             display: flex;
         }
@@ -114,10 +139,8 @@
         </div>
         <h1>Grundläggande regler för arbetsgivare</h1>
         <p>Arbetsgivare bör först och främst bekanta sig med de grundläggande reglerna som 
-        finns i nedan två föreskrifter, vilka beskriver arbetsgivarens skyldigheter.</p>
-        
-        <p>Klicka på de gula kortet för att se vad de olika föresrkifterna innehåller och 
-        vilken eller vilka tidigare föreskrifter de ersätter.</p>
+        finns i nedan två föreskrifter, vilka beskriver arbetsgivarens skyldigheter. <b>Klicka på de gula kortet för att se vad de olika föresrkifterna innehåller och 
+        vilken eller vilka tidigare föreskrifter de ersätter.</b></p>
 
       
 
@@ -142,31 +165,52 @@
 
         <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
         <div class="content">
-            <p><b>AFS 2023:1 Systematiskt arbetsmiljöarbete <br>– Grundläggande skyldigheter för arbetsgivare</b>
-            <br><br>Denna föreskrift ersätter den tidigare <b>AFS 2001:1 Systematiskt arbetsmiljöarbete</b>gäller för alla arbetsgivare och beskriver arbetsgivarens ansvar att 
+            <p><b>AFS 2023:1 Systematiskt arbetsmiljöarbete</b> <br>– Grundläggande skyldigheter för arbetsgivare
+            <br><br>Föreskriften gäller för alla arbetsgivare och beskriver arbetsgivarens ansvar att 
             se till att de personer som får uppgifter har rätt resurser, befogenheter och kunskaper 
             för att utföra sina uppgifter. Här inkluderas regler för arbetsmiljöpolicy, företagshälsovård 
             och det systematiska arbetsmiljöarbetet, vilket innebär att undersöka, genomföra och följa 
             upp verksamheten för att förebygga olyckor och ohälsa.
             </p>
+
+            <h2>Vad ersätter den?</h2>
+            <p>AFS 2023:1 ersätter den tidigare <b>AFS 2001:1 Systematiskt arbetsmiljöarbete</b></p>
         </div>
 
         <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
         <div class="content">
-            <p>Dessa föreskrifter syftar till att arbetsgivare ska planera, organisera och genomföra 
+            <p><b>Planering och organisering av arbetsmiljöarbete</b> <br>– Grundläggande skyldigheter för arbetsgivare
+            <br><br>Dessa föreskrifter syftar till att arbetsgivare ska planera, organisera och genomföra 
                 arbetsmiljöarbetet för att förebygga ohälsa och olycksfall samt säkerställa en 
-                tillfredsställande arbetsmiljö. Relevanta kapitel i denna föreskrift inkluderar:
+                tillfredsställande arbetsmiljö.
             </p>
-            <p>
-                Kap. 2. Organisatorisk och social arbetsmiljö<br>
-                Kap. 3. Arbetsanpassning<br>
-                Kap. 4. Första hjälpen och krisstöd<br>
-                Kap. 5. Våld och hot om våld<br>
-                Kap. 6. Ensamarbete<br>
-                Kap. 7. Gravida, nyförlösta och ammande arbetstagare<br>
-                Kap. 8. Minderårigas arbetsmiljö<br>
-                Kap. 9. Anteckningar om jourtid, övertid och mertid
-            </p>
+            <div class="flexbox">
+                <div class="column1">
+                    <h2>Relevanta kapitel inkluderar:</h2>
+                    <p class="lista">
+                        Kap. 2. Organisatorisk och social arbetsmiljö<br>
+                        Kap. 3. Arbetsanpassning<br>
+                        Kap. 4. Första hjälpen och krisstöd<br>
+                        Kap. 5. Våld och hot om våld<br>
+                        Kap. 6. Ensamarbete<br>
+                        Kap. 7. Gravida, nyförlösta och ammande arbetstagare<br>
+                        Kap. 8. Minderårigas arbetsmiljö<br>
+                        Kap. 9. Anteckningar om jourtid, övertid och mertid
+                    </p>
+                </div>
+
+                <div class="column2">
+                    <h2>Vad ersätter den?</h2>
+                    <p class="lista">AFS 2020:5 Arbetsanpassning
+                    <br>AFS 2015:4 Organisatorisk och social arbetsmiljö
+                    <br>AFS 2012:3 Minderårigas arbetsmiljö
+                    <br>AFS 2007:5 Gravida och ammande arbetstagare
+                    <br>AFS 1999:7 Första hjälpen och krisstöd
+                    <br>AFS 1993:2 Våld och hot i arbetsmiljön
+                    <br>AFS 1982:3 Ensamarbete
+                    <br>AFS 1982:17 Anteckningar om jourtid, övertid och mertid.</p>
+                </div>
+            </div>
         </div>
 
         <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
