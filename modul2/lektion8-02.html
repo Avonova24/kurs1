@@ -3,46 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbetsmiljöverkets rekommendationer</title>
-	<link rel="stylesheet" href="../styles.css">
+    <title>Risker i arbetsmiljön: Vad ersätter den?</title>
+    <link rel="stylesheet" href="../styles.css">
+    
     <style>
-        
+
         .container {
             display: flex;
-            padding: 2% 0 0 0;
-            margin: 0;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h1, p {
-          text-align: center;
+            flex-direction: column;   
+            padding: 5% 10%;
         }
 
         h1 {
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
 
-        p {
-            max-width: 70%;
-        }
         
-        img {
+
+
+        .flexbox, .flexbox2 {
+            display: flex;
             width: 100%;
 
-        } 
-    
+        }
+
+        .flexbox {
+            gap: 1%;
+        }
+
+
+        .column1 {
+            text-align: left;
+            flex-direction: column;
+            flex: 1.5;
+
+
+        }
+
+        .image-container {
+            flex: 1;
+            
+        }
+
+        .image-container img {
+            width: 90%;
+        }
+
+        .flexbox2 {
+            align-items: start;
+            gap: 12%;
+        }
+
+        .left {
+            flex: 1.2;
+        }
+
+        .right {
+            flex: 1;
+        }
+
     
     </style>
-    
 </head>
-
 <body>
     <div class="container">
         
-        <img src="../images/oversiktbild6.png">
-     
+        <h1>Vad ersätter den?</h1>
+        <p><b>Se översikt nedan av de tidigare AFS som nu täcks av AFS 2023:11:</b></p>
+        <div class="flexbox2">
+            <p class="left">AFS 2017:3 Användning och kontroll av trycksatta anordningar
+            <br>AFS 2013:4 Ställningar
+            <br>AFS 2012:1 Användning av motorkedjesågar och röjsågar 
+            <br>AFS 2006:7 Tillfälliga personlyft med kranar eller truckar 
+            <br>AFS 2006:6 Användning av lyftanordningar och lyftredskap
+            <br>AFS 2006:5 Användning av truckar
+            <br>AFS 2006:4 Användning av arbetsutrustning  
+            </p>
+
+            <p class="right">AFS 2004:6 Användning av traktorer 
+            <br>AFS 2004:3 Stegar och arbetsbockar
+            <br>AFS 2003:6 Besiktning av lyftanordningar och vissa andra tekniska anordningar 
+            <br>AFS 2001:3 Användning av personlig skyddsutrustning  
+            <br>AFS 1999:8 Användning av pressar och gradsaxar 
+            <br>AFS 1998:5 Arbete vid bildskärm   
+            </p>
+
+        </div>
     </div>
 </body>
 </html>
