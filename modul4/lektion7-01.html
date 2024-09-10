@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Förändringar och förtydliganden i rollen som byggherre i kommande AFS 2023:3</title>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;   
+        }
+
+        h1, p  {
+            text-align: center;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+        .circle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            gap: 35px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+
+        .circle-button-green1, .circle-button-green2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            
+            width: 130px;
+            height: 130px;
+            padding: 14px;
+           
+            border-radius: 50%;
+            border: none;
+            
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .circle-button-green1 {
+            background-color: #00866d;
+        }
+
+        .circle-button-green2 {
+            background-color: #01332a;
+
+        }
+
+        .circle-button-green1:hover, .circle-button-green2:hover {
+            background-color: #aff0e5;
+            color: #01332a;
+        }
+
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 0;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 700px;
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+
+        .content img {
+            width: 200px;
+            margin: 0;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 15px;
+            text-align: left;
+            padding: 0 5% 0 3%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+        </div>
+        <h1>Förändringar och förtydliganden i rollen som byggherre i kommande AFS 2023:3</h1>
+        
+        <div class="circle-container">
+            <label class="circle-button-green1" for="toggle1">Lämplig BAS-P/BAS-U:</label>
+            <label class="circle-button-green2" for="toggle2">Skyldighet att avbryta <br>farliga arbeten</label>
+        </div>
+
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddsombud.png" alt="Bild för Olycksdrabbad bransch">
+            <p><b>Lämplig BAS-P/BAS-U</b> 
+            <br>Den nya föreskriften klargör att en lämplig BAS-P eller BAS-U är den som har den 
+            utbildning, kompetens och erfarenhet som krävs för att utföra arbetsmiljöarbetet, anpassat 
+            efter projektets storlek, komplexitet och risknivå.</p>
+        </div>
+
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/skyddskommitte.png" alt="Höga kostnader för dålig kvalitet">
+            <p><b>Skyldighet att avbryta farliga arbeten</b> 
+            <br>Byggherren och BAS-U har nu en uttrycklig skyldighet att se till att arbete som 
+            innebär omedelbar och allvarlig fara för liv eller hälsa avbryts eller anpassas för 
+            att eliminera faran.</p>
+        </div>
+
+    </div>
+</body>
+</html>
