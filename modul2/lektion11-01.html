@@ -1,90 +1,87 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vilka roller har ni?</title>
+    <title>AFS 2023:13 Risker vid vissa typer av arbeten</title>
     <link rel="stylesheet" href="../styles.css">
-    
     <style>
-
+		
         .container {
-            text-align: left;
-        }
-
-        h2 {
-            font-size: 25px;
-        }
-
-        ul {
-            margin-left: 7%;
-        }
-
-        ul li:not(:last-child) {
-            margin-bottom: 25px; 
-        }
-
-        .flexbox {
-			display: flex;
-			justify-content: center; /* Centrerar hela flexboxen horisontellt */
-			align-items: center; /* Centrerar innehållet vertikalt */
-			width: 100%; /* Ser till att flexboxen täcker hela bredden av föräldern */
-		}
-		
-		.content, .image-container {
-			width: 50%; /* Ser till att båda blocken tar upp halva bredden */
-			box-sizing: border-box; /* Inkluderar padding och border i elementens bredd */
-		}
-		
-		.content {
-			flex: 1.5; /* Tar upp 2/3 av utrymmet */
-            box-sizing: border-box;
-			
-		}
-
-        .image-container {
-			flex: 1; 
-            max-width: 400px;
+            display: flex;
+            justify-content: center;
             
-		}
+            padding-left: 10%;
+            padding-right: 3%;
+            overflow: hidden; 
+            flex-direction: column;
+        }
 
+        h1 {
+            margin-bottom: 0;
+        }
+
+       
+        li {
+            line-height: 24px;
+        }
+		
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 1%;
+            margin-top: 3%;
+
+        }
+		
+        .column1 {
+            flex: 1.2;
+            margin: 0;
+        }
+
+        .column2 {
+            flex: 1;
+        }
+
+		.image-container {
+            overflow: hidden;
+            line-height: 0;
+			
+		} 
+		
 		.image-container img {
-			width: 100%; /* Anpassar bildens storlek till image-container */
-            min-width: 300px;
-
+			width: 100%;
         }
 
     </style>
 </head>
+	
 <body>
     <div class="container">
-        <div class="avonova-logo">
-            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
-        </div>
         
-        <h1>Vilka roller har ni?</h1>
-        <p>Översikten visar hur de nuvarande reglerna är insorterade i den nya regelstrukturen
-            AFS 2023:1 Systematiskt arbetsmiljöarbete – grundläggande skyldigheter för dig med
-            arbetsmiljöansvar ersätter den tidigare, AFS 2001:1 Systematiskt arbetsmiljöarbete.</p>
-        <div class="flexbox">
-            <div class="content">
-                <h2>Rollerna är:</h2>
-                <ul>
-                    <li>Arbetsgivare</li>
-                    <li>Byggherre, projektör eller byggarbetsmiljösamordnare</li>
-                    <li>Tillverkare, importör eller distributör av vissa produkter.</li>
-                </ul>
+        <div class="content">
+            <div class="column1">
+                <div class="avonova-logo">
+                    <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+                </div>
+                <h1>AFS 2023:13 Risker vid vissa typer av arbeten</h1>
+                <p>AFS 2023:13 risker vid vissa typer av arbeten innehåller regler som
+                 riktar sig till en specifik bransch eller specifika typer av arbeten, till exempel 
+                 berg-och gruvarbete, dykeriarbete och arbete med asbest. 
+                 </p>
+
             </div>
 
-            <div class="image-container">
-                <img src="../images/lektion6_bild1.png" alt="Tre stycken byggarbetare">
+            <div class="column2">
+                <div class="image-container">
+                    <img src="../images/afsbild2.png" alt="Kalender, penna och klocka">
+                </div>
             </div>
         </div>
 
-        <p>Det är viktigt att identifiera vilka roller ni har inom organisationen, eftersom dessa påverkar 
-        ert ansvar att följa reglerna. Skyddsombud och arbetsmiljöombud spelar centrala roller i 
-        arbetsmiljöarbetet, men de har inte samma ansvar. För att säkerställa en god arbetsmiljö behöver 
-        arbetsgivaten samverka med både skyddsombud och arbetstagare gällande arbetsmiljöarbetet.</p>
+           
     </div>
 </body>
 </html>

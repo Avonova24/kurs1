@@ -3,46 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbetsmiljöverkets rekommendationer</title>
-	<link rel="stylesheet" href="../styles.css">
+    <title>Risker vid vissa typer av arbeten: Vad ersätter den?</title>
+    <link rel="stylesheet" href="../styles.css">
+    
     <style>
-        
+
         .container {
             display: flex;
-            padding: 2% 0 0 0;
-            margin: 0;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h1, p {
-          text-align: center;
+            flex-direction: column;   
+            padding: 5% 10%;
         }
 
         h1 {
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
 
-        p {
-            max-width: 70%;
-        }
         
-        img {
+
+
+        .flexbox, .flexbox2 {
+            display: flex;
             width: 100%;
 
-        } 
-    
+        }
+
+        .flexbox {
+            gap: 0;
+        }
+
+
+        .column1 {
+            text-align: left;
+            flex-direction: column;
+            flex: 1;
+
+
+        }
+
+        .image-container {
+            flex: 1;
+            
+        }
+
+        .image-container img {
+            width: 90%;
+        }
+
+        .flexbox2 {
+            align-items: start;
+            gap: 12%;
+        }
+
+        .left {
+            flex: 1.2;
+        }
+
+        .right {
+            flex: 1;
+        }
+
     
     </style>
-    
 </head>
-
 <body>
     <div class="container">
         
-        <img src="../images/oversiktbild8.png">
-     
+        <h1>2023:13 - Vad ersätter den?</h1>
+        <p>Se översikt nedan av de tidigare AFS som nu täcks av <b>AFS 2023:13:</b></p>
+        <div class="flexbox2">
+            <p class="left">AFS 2020:1 Arbetsplatsens utformning (Kapitlet om att arbeta i kylda livsmedelslokaler)
+                <br>AFS 2011:2 Innesluten användning av genetiskt modifierade mikroorganismer
+                <br>AFS 2010:16 Dykeriarbete
+                <br>AFS 2010:1 Berg- och gruvarbete
+                <br>AFS 2008:17 Arbete med djur
+                <br>AFS 2007:7 Rök- och kemdykning
+                <br>AFS 2007:1 Sprängarbete
+                <br>AFS 2006:8 Provning med över- eller undertryck
+                
+            </p>
+
+            <p class="right">AFS 2006:1 Asbest
+                <br>AFS 2001:9 Hamnarbete
+                <br>AFS 2000:6 Mast- och stolparbete
+                <br>AFS 1999:3 Byggnads- och anläggningsarbete (de delar som berör både arbetsgivare och andra)
+                <br>AFS 1998:8 Arbete i motorbranschen
+                <br>AFS 1997:5 Smältning och gjutning av metall
+                <br>AFS 1985:18 Frisörarbete                
+            </p>
+
+        </div>
     </div>
 </body>
 </html>
