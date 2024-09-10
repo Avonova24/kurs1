@@ -3,151 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nya regler för projektering och byggarbetsmiljösamordning</title>
+    <title>AFS 2023:3 tre stycken avdelningar</title>
 	<link rel="stylesheet" href="../styles.css">
     <style>
 		
 		.container {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding-right: 16%;
-            padding-left: 16%;
-        }
-		
-		.flexbox {
 			display: flex;
-			justify-content: center; /* Centrerar hela flexboxen horisontellt */
-			align-items: center; /* Centrerar innehållet vertikalt */
-			width: 100%; /* Ser till att flexboxen täcker hela bredden av föräldern */
-			margin-top: 20px;
-            text-align: left;
-		}
-		
-		.content, .image-container {
-			width: 50%; /* Ser till att båda blocken tar upp halva bredden */
-			box-sizing: border-box; /* Inkluderar padding och border i elementens bredd */
-		}
-		
-		.content {
-			flex: 1.6; /* Tar upp 2/3 av utrymmet */
-            box-sizing: border-box;
-		}
-
-        .content ul {
-            text-align: left;
-        }
-
-		.image-container {
-			display: flex;
-			justify-content: center; /* Centrerar bilden horisontellt inom image-container */
-			align-items: center; /* Centrerar bilden vertikalt inom image-container */
-            flex: 1; /* Tar upp 1/3 av utrymmet */
-			margin-right: -8%;
-            
-		}
-
-		.image-container img {
-			width: 450px; /* Anpassar bildens storlek till image-container */
-            
-        }
-
-        /*Toogle styling*/
-
-        .button {
-			display: flex;
-			justify-content: flex-end;
-		}
-		
-		.button-link {
-			background-color: #00211b;
-			color: #aff0e5;
-			padding: 13px 40px;
-			font-size: 14px;
-			font-weight: bold;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			text-align: center;
-			text-decoration: none;
-			border: none;
-			border-radius: 40px;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
-			display: inline-block;
-			margin-top: 50px;
-			border: 2px solid #00211b; /* Här lägger vi till linjen runt knappen */
 		}
-		
-		.button-link:hover {
-			background-color: #aff0e5;
-			color: #00211b;
-			border: 2px solid #00211b; /* Här lägger vi till linjen runt knappen */
-		}
-		
-		
-		.toggle-container {
-			display: flex;
-            align-items: center;
-            justify-content: center;
-            
-		}
-		
-		.buttons {
+
+		/*Toogle styling*/
+
+		.toggle-container, .toggle-buttons {
 			display: flex;
 			justify-content: center;
-			
-		}
-		
-		.toggle-button {
-			background-color: #e0fff9;
-			color: #00211b;
-			height: 120px;
-			width: 120px;
-			margin: 15px 10px 0 10px;
-			font-size: 14px;
-			font-weight: bold;
-			text-align: center;
-			line-height: 16px; /* Sätt line-height lika med höjden för perfekt vertikal centrering */
-			text-decoration: none;
-			border: 2px solid #00211b;
-			border-radius: 50%;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
-			display: flex;
-			justify-content: center; /* Centrerar texten horisontellt */
-			align-items: center; /* Centrerar texten vertikalt */
-			box-sizing: border-box; /* Säkerställer att padding och border inkluderas i storleken */
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 3%;
+            margin-bottom: 3%;
 		}
 
-		.toggle-button:hover {
-			background-color: #7eeedb;
-			color: #00211b;
-			border: 2px solid #00211b; /* Här lägger vi till linjen runt knappen */
+		.toggle-buttons {
+			gap: 15px;
 		}
-		
+
+		.circle-button-green1, .circle-button-green2 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 130px;
+			height: 130px;
+			padding: 14px;
+			text-align: center;
+			font-size: 15px;
+			font-weight: bold;
+			text-decoration: none;
+			color: white;
+			border-radius: 50%;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+		}
+
+		.circle-button-green1 {
+			background-color: #00866d;
+		}
+
+		.circle-button-green2 {
+			background-color: #005646;
+		}
+
+		.circle-button-green1:hover, .circle-button-green2:hover {
+			background-color: #aff0e5;
+			color: #01332a;
+		}
+
 		.toggle-checkbox {
 			display: none;
 		}
 
-		.content2 {
-			width: 100%;
-			display: flex;
-			justify-content: center;
+		.toggle-content-container {
+			width: 70%;
+			margin-top: 10% 5%;
+            
 		}
 
 		.toggle-content {
 			display: none;
-			position: absolute;
 			opacity: 0;
-			max-width: 800px;
-			width: 70%;
-			text-align: left;
-			gap: 20px;
 			flex-direction: row;
 			align-items: center;
 			justify-content: center;
-			transition: opacity 0.3s ease, position 0.3s ease;
-			margin: 30px 0 0;
-		}
 
+            margin-top: 5%;
+            margin-bottom: 5%;
+			
+            text-align: left;
+			width: 100%;
+			gap: 20px;
+			
+			transition: opacity 0.3s ease, position 0.3s ease;
+		}
 
 		.toggle-checkbox:checked + .toggle-content {
 			display: flex;
@@ -156,22 +96,12 @@
 		}
 
 
-		.toggle-image {
-			max-width: 20%;
-			height: auto;
-			border-radius: 6%;
-		}
-		
 		.toggle-text {
 			font-size: 16px;
+			text-align: left;
 			margin: 0;
-			flex: 1;
 		}
 
-        .text3 {
-            margin-top: 8%;
-        }
-		
     </style>
 </head>
 <body>
@@ -180,34 +110,47 @@
             <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
         </div>
 		
-		
-		<h1>Nya regler för projektering och byggarbetsmiljösamordning</h1>
-			
-		<p>Arbetsmiljöverkets föreskrifter och allmänna råd (AFS 2023:3) om projektering och 
-		byggarbetsmiljösamordning – grundläggande skyldigheter syftar till att förebygga ohälsa 
-		och olycksfall under både bygg- och bruksskedet samt att skapa förutsättningar för en god 
-		arbetsmiljö vid utformningen av arbetsplatser.
-		</p>
-	
-        <div class="flexbox">
-            <div class="content">
-                <p>De nya reglerna innehåller tydligare bestämmelser om att:</p>
-                <ul>
-                    <li>Förebygga risker så tidigt som möjligt i bygg- och anläggningsprojekt</li>
-                    <li>Övergripande organisera och skapa förutsättningar för en god arbetsmiljö</li>
-                    <li>Samordna och organisera bygg- och anläggningsprojekt</li>
-					<li>Kontrollera och följa upp arbetsmiljöarbetet</li>
-                </ul>
-            </div>
+		<h1>Föreskriften är indelad i 3 stycken avdelningar</h1>
+        <p>Klicka på de <b>gröna knapparna</b> nedan för att läsa mer om varje avdelning i AFS 2023:3</p>
+
+        <div class="toggle-container">
+			<div class="toggle-buttons">
+				<label for="toggle1" class="circle-button-green1">Avdelning I</label>
+				<label for="toggle2" class="circle-button-green2">Avdelning II</label>
+				<label for="toggle3" class="circle-button-green1">Avdelning III</label>
+			</div>
+		</div>
+        
+			<div class="toggle-content-container">
+				<input type="radio" id="toggle1" name="toggle" class="toggle-checkbox">
+				
+				<div class="toggle-content">
+					<p class="toggle-text"><b>Avdelning I:</b> Allmänna bestämmelser.</p>
+				</div>
+				
+				<input type="radio" id="toggle2" name="toggle" class="toggle-checkbox">
+				
+				<div class="toggle-content">
+					<p class="toggle-text"><b>Avdelning II:</b> Aktörernas ansvar och uppgifter i byggprojektet
+                        <br><br>Denna avdelning innehåller kapitel som behandlar ansvarsområden för olika aktörer, inklusive byggherrar, 
+                        BAS-P, BAS-U, projektörer, arkitekter och konstruktörer, samt de som tillverkar monteringsfärdiga byggnader 
+                        eller anläggningar.</p>
+				</div>
+				
+				<input type="radio" id="toggle3" name="toggle" class="toggle-checkbox">
+				
+				<div class="toggle-content">
+					<p class="toggle-text"><b>Avdelning III:</b> Gemensamma bestämmelser om hur risker förebyggs<br><br>
+                        Här behandlas grundprinciper för att förebygga arbetsmiljörisker, planering och projektering för en 
+                        säker arbetsmiljö under både byggskedet och bruksskedet, samt riktlinjer för arbetsmiljöplanen 
+                        och överlämningen av arbetsmiljöarbetet.</p>
+                </div>
+			</div>
+
+            <h2>Vad ersätter den?</h2>
+            <p><b>FS 2020:1</b> Arbetsplatsens utformning (de delar som handlar om byggarbetsmiljösamordning, planering och projektering för bruksskedet) 
+            <br><br><b>AFS 1999:3</b> Byggnads-och anläggningsarbete (de delar som inte berör arbetsgivare).</p>
             
-            <div class="image-container">
-                <img src="../images/afsbild2.png" alt="Illustration AFS">
-            </div>
-	    </div>
-        <p>Reglerna gäller för byggherrar, projektörer (inklusive arkitekter, konstruktörer och andra
-		medverkande), byggarbetsmiljösamordnare samt tillverkare av monteringsfärdiga byggnader eller 
-		anläggningar.</p>
-	
     </div>
 </body>
 </html>
