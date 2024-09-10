@@ -3,46 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbetsmiljöverkets rekommendationer</title>
+    <title>AFS 2023:3 tre stycken avdelningar</title>
 	<link rel="stylesheet" href="../styles.css">
     <style>
-        
-        .container {
-            display: flex;
-            padding: 2% 0 0 0;
-            margin: 0;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
 
-        h1, p {
-          text-align: center;
-        }
+		/*Toogle styling*/
 
-        h1 {
-            margin-bottom: 5px;
-        }
+		.toggle-container, .toggle-buttons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 3%;
+            margin-bottom: 3%;
+		}
 
-        p {
-            max-width: 70%;
-        }
-        
-        img {
-            width: 100%;
+		.toggle-buttons {
+			gap: 15px;
+		}
 
-        } 
-    
-    
+		.circle-button-green1, .circle-button-green2 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 130px;
+			height: 130px;
+			padding: 14px;
+			text-align: center;
+			font-size: 15px;
+			font-weight: bold;
+			text-decoration: none;
+			color: white;
+			border-radius: 50%;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+		}
+
+		.circle-button-green1 {
+			background-color: #00866d;
+		}
+
+		.circle-button-green2 {
+			background-color: #005646;
+		}
+
+		.circle-button-green1:hover, .circle-button-green2:hover {
+			background-color: #aff0e5;
+			color: #01332a;
+		}
+
+		.toggle-checkbox {
+			display: none;
+		}
+
+		.toggle-content-container {
+			width: 70%;
+			margin-top: 10% 5%;
+            
+		}
+
+		.toggle-content {
+			display: none;
+			opacity: 0;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+            margin-top: 5%;
+            margin-bottom: 5%;
+			
+            text-align: left;
+			width: 100%;
+			gap: 20px;
+			
+			transition: opacity 0.3s ease, position 0.3s ease;
+		}
+
+		.toggle-checkbox:checked + .toggle-content {
+			display: flex;
+			position: static;
+			opacity: 1;
+		}
+
+
+		.toggle-text {
+			font-size: 16px;
+			text-align: left;
+			margin: 0;
+		}
+
     </style>
-    
 </head>
-
 <body>
     <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+        </div>
+		
+		<h1>Föreskriften är indelad i 3 stycken avdelningar</h1>
+        <p>Klicka på de <b>gröna knapparna</b> nedan för att läsa mer om varje avdelning i AFS 2023:3</p>
+
+        <div class="toggle-container">
+			<div class="toggle-buttons">
+				<label for="toggle1" class="circle-button-green1">Avdelning I</label>
+				<label for="toggle2" class="circle-button-green2">Avdelning II</label>
+				<label for="toggle3" class="circle-button-green1">Avdelning III</label>
+			</div>
+		</div>
         
-        <img src="../images/oversiktbild4.png">
-     
+			<div class="toggle-content-container">
+				<input type="radio" id="toggle1" name="toggle" class="toggle-checkbox">
+				
+				<div class="toggle-content">
+					<p class="toggle-text"><b>Avdelning I:</b> Allmänna bestämmelser.</p>
+				</div>
+				
+				<input type="radio" id="toggle2" name="toggle" class="toggle-checkbox">
+				
+				<div class="toggle-content">
+					<p class="toggle-text"><b>Avdelning II:</b> Aktörernas ansvar och uppgifter i byggprojektet
+                        <br><br>Denna avdelning innehåller kapitel som behandlar ansvarsområden för olika aktörer, inklusive byggherrar, 
+                        BAS-P, BAS-U, projektörer, arkitekter och konstruktörer, samt de som tillverkar monteringsfärdiga byggnader 
+                        eller anläggningar.</p>
+				</div>
+				
+				<input type="radio" id="toggle3" name="toggle" class="toggle-checkbox">
+				
+				<div class="toggle-content">
+					<p class="toggle-text"><b>Avdelning III:</b> Gemensamma bestämmelser om hur risker förebyggs<br><br>
+                        Här behandlas grundprinciper för att förebygga arbetsmiljörisker, planering och projektering för en 
+                        säker arbetsmiljö under både byggskedet och bruksskedet, samt riktlinjer för arbetsmiljöplanen 
+                        och överlämningen av arbetsmiljöarbetet.</p>
+                </div>
+			</div>
+
+            <h2>Vad ersätter den?</h2>
+            <p><b>FS 2020:1</b> Arbetsplatsens utformning (de delar som handlar om byggarbetsmiljösamordning, planering och projektering för bruksskedet) 
+            <br><br><b>AFS 1999:3</b> Byggnads-och anläggningsarbete (de delar som inte berör arbetsgivare).</p>
+            
     </div>
 </body>
 </html>
