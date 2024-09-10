@@ -14,7 +14,8 @@
             justify-content: center;
         
             flex-direction: column;   
-            padding: 5% 15%;
+            padding-right: 5%;
+            
         }
 
         h1 {
@@ -28,26 +29,27 @@
 
         .flexbox {
             display: flex;
-            gap: 10%;
             width: 100%;
+            align-items: center;
 
         }
 
         .column1 {
             text-align: left;
-            flex-direction: column;
             flex: 1.5;
+            margin-right: 5%;
 
 
         }
 
         .image-container {
-            flex: 1;
+            flex: 0.5;
             
         }
 
         .image-container img {
-            width: 90%;
+            min-width: 300px;
+            max-width: 360px;
         }
 
     
@@ -55,13 +57,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="avonova-logo">
-            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
-        </div>
-        <h1>Grundläggande regler för arbetsgivare</h1>
         
         <div class="flexbox">
             <div class="column1">
+                <div class="avonova-logo">
+                    <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+                </div>
+                <h1>Grundläggande regler för arbetsgivare</h1>
                 <p>Arbetsgivare bör först och främst bekanta sig med de grundläggande reglerna som 
                 finns i <b>AFS 2023:1</b> och <b>AFS 2023:2</b></p>
                 <p>Kommande sidor innehåller närmare information om vad dessa innehåller samt 
@@ -69,7 +71,7 @@
             </div>
 
             <div class="image-container">
-                <img src="../images/tidsplanering.png" alt="Kalender, penna och klocka">
+                <img src="../images/grundregler.png" alt="Kalender, penna och klocka">
             </div>
         </div>
 

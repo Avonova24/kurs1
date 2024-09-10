@@ -52,20 +52,45 @@
 			width: 90%;
         }
 
+        .flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column-left {
+            flex: 1.5;
+            margin-right: 5%;
+
+        }
+
+        .image-box {
+            width: 30%;
+            max-width: 250px;
+            flex: 0.8;
+        }
+
     </style>
 </head>
 	
 <body>
     <div class="container">
-            <div class="avonova-logo">
-                <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
-            </div>
             
-            <h1>AFS 2023:2 Planering och organisering av arbetsmiljöarbete</h1>
+            
+            <div class="flexbox">
+                <div class="column-left">
+                    <div class="avonova-logo">
+                        <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+                    </div>
+                    <h1>AFS 2023:2 Planering och organisering av arbetsmiljöarbete</h1>
                 <h3>– Grundläggande skyldigheter för arbetsgivare</h3>
                     <p>Föreskriften syftar till att arbetsgivare ska planera, organisera och genomföra 
                     arbetsmiljöarbetet för att förebygga ohälsa och olycksfall samt säkerställa en 
                     tillfredsställande arbetsmiljö.</p>
+                </div>
+
+                <img class="image-box" src="../images/planeraama.png">
+            </div>
             
         <div class="content">
             <div class="column1">
