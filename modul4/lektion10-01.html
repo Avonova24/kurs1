@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byggherrens ställföreträdare och ansvarsövergång</title>
+	<link rel="stylesheet" href="../styles.css">
+    <style>
+
+        .container {
+            text-align: center;
+            
+        }
+
+        p {
+            padding-right: 15%;
+            padding-left: 15%;
+        }
+
+        .buttons-container {
+            display: flex;
+            
+            justify-content: center;
+            
+            width: 100%;
+            max-width: 1000px;
+
+            
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            
+            background-color: #ffdcaf;
+            color: #005646;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            
+            width: 180px;
+            height: 100px;
+            padding: 20px;
+            
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .buttons:hover {
+            background-color: #00866d;
+            color: white;
+        }
+        
+      
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 5px;
+            
+        }
+
+        .content ul {
+            margin-left: 15%;
+            text-align: left;
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+            flex-direction: column;
+        }
+    
+		
+    </style>
+</head>
+	
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+       	</div>
+        <h1>Byggherrens ställföreträdare och ansvarsövergång</h1>
+        <h2>- Nya krav på individuell utprovning av andningsskydd</h2>
+        <p>Från och med 1 januari 2025 gäller nya regler som innebär att arbetsgivare måste säkerställa 
+        att andningsskydd är individuellt utprovade och, om det rör sig om tätsittande andningsskydd, 
+        att dessa genomgår en tillpassningsprovning för att garantera korrekt täthet.</p>
+        
+      
+        <div class="buttons-container">
+            <label class="buttons" for="toggle1">Individuellt utprovade <br>andningsskydd</label>
+                    
+            <label class="buttons" for="toggle2">Tätsittande andningsskydd <br>och tillpassningsprovning</label>
+                    
+            <label class="buttons" for="toggle3">Metoder för <br>tillpassningsprovning</label>
+                    
+            <label class="buttons" for="toggle4">Genomförande av provning</label>
+        </div>
+        
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+                    
+            <div class="content">
+                <p><b>Individuellt utprovade andningsskydd</b>
+                <br>Som arbetsgivare är det ditt ansvar att se till att varje arbetstagares 
+                andningsskydd är utprovat för att passa den enskilda individen. Detta innebär att 
+                andningsskyddet måste vara anpassat efter användarens ansiktsform och storlek för att 
+                säkerställa att det ger det skydd som krävs. Detta krav finns redan i nuvarande regler 
+                för hantering av kemiska arbetsmiljörisker, kvarts och stendamm samt asbest.</p>
+            </div>
+        
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+                   
+            <div class="content">
+                <p><b>Tätsittande andningsskydd och tillpassningsprovning</b>
+                <br>Om tätsittande andningsskydd används, måste arbetsgivaren se till att tätheten provas genom 
+                en tillpassningsprovning. Detta är nödvändigt för att säkerställa att skyddet fungerar som 
+                avsett och inte släpper igenom farliga partiklar.</p>
+            </div>
+        
+        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+                   
+            <div class="content">
+                <p><b>Metoder för tillpassningsprovning</b>
+                    <br>Provningen kan utföras med kvantitativa eller kvalitativa metoder:</p>
+
+                    <ul>
+                        <li>Kvantitativa metoder: Dessa metoder mäter antalet partiklar innanför respektive utanför andningsskyddet, eller mäter lufttrycket inuti skyddet.</li>
+                        <li>Kvalitativ metod: Här bär användaren sitt andningsskydd under en huva, och ett smak- eller doftämne sprutas in. Om användaren känner smaken eller doften, är skyddet inte tillräckligt tätt.</li>
+                    </ul>
+                    </div>
+        
+                    <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
+                    
+                    <div class="content">
+                        <p><b>Genomförande av provning</b>
+                        <br>Tillpassningsprovningen bör utföras av en person med kunskap om andningsskydd och de specifika provningsmetoder som används. För mer detaljerade beskrivningar av metoderna hänvisas till den internationella standarden ISO 16975-3, som kan beställas via Svenska institutet för standarder, SIS.
+                           </p>
+                    </div>
+	</div>
+</body>
+</html>
