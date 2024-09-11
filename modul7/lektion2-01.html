@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbetsmiljöplanen – Ett styrande dokument</title>
+	<link rel="stylesheet" href="../styles.css">
+    <style>
+
+        .container {
+            text-align: center;
+            
+        }
+
+        p {
+            padding-right: 15%;
+            padding-left: 15%;
+        }
+
+        .buttons-container {
+            display: flex;
+            
+            justify-content: center;
+            
+            width: 100%;
+            max-width: 1000px;
+
+            
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            
+            background-color: #ffdcaf;
+            color: #005646;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            
+            width: 180px;
+            height: 100px;
+            padding: 20px;
+            
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .buttons:hover {
+            background-color: #00866d;
+            color: white;
+        }
+      
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            margin-top: 5px;
+            
+        }
+
+        .content ul {
+            margin-left: 15%;
+            text-align: left;
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+    
+		
+    </style>
+</head>
+	
+<body>
+    <div class="container">
+        <div class="avonova-logo">
+            <img src="../images/Avonova_Logo_Green.png" alt="Avonova Logo" width="80">
+       	</div>
+        <h1>Arbetsmiljöplanen – Ett styrande dokument</h1>
+        <p>Arbetsmiljöplanen är ett centralt styrande dokument som tas fram i ett tidigt skede 
+        av byggprojektet och styr arbetsmiljöarbetet genom hela projektet.</p>
+
+        <h2>Kap. 11 Arbetsmiljöplanen:</h2>
+        
+      
+        <div class="buttons-container">
+            <label class="buttons" for="toggle1">Tidigt skede</label>
+                    
+            <label class="buttons" for="toggle2">Arbeten med särskild risk</label>
+                    
+            <label class="buttons" for="toggle3">Generell arbetsmiljöplan</label>
+                    
+            <label class="buttons" for="toggle4">Byggherrens ansvar</label>
+        </div>
+        
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+                    
+            <div class="content">
+                <p><b>Tidigt skede</b>
+                <br>Arbetsmiljöplanen ska tas fram i ett tidigt skede och fungerar som ett styrande dokument 
+                för arbetsmiljöarbetet under hela byggprojektet.</p>
+            </div>
+        
+                    <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+                   
+                    <div class="content">
+                        <p><b>Arbeten med särskild risk</b>
+                        <br>Föreskrifterna har omstrukturerat de tretton riskpunkterna, så att de vanligaste riskerna kommer först. För arbeten med särskild risk ska specifika åtgärder för varje arbetsmoment beskrivas i planen. Om risker är återkommande men kräver olika åtgärder, ska varje situation beskrivas separat.</p>
+                    </div>
+        
+                    <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+                   
+                    <div class="content">
+                        <p><b>Generell arbetsmiljöplan</b>
+                            <br>Det finns möjlighet att använda en generell förenklad plan för mindre projekt, där arbetet är av enklare karaktär och pågår mindre än två dagar. Detta kan vara lämpligt för industrier där en komplett arbetsmiljöorganisation redan är på plats och där arbetet omfattar små uppgifter som är likartade och återkommande.</p>
+                        
+                    </div>
+        
+                    <input type="radio" id="toggle4" name="toggle" class="toggle-radio">
+                    
+                    <div class="content">
+                        <p><b>Byggherrens ansvar:</b>
+                            <br>Byggherren har ansvar för att säkerställa att arbetsmiljöplanen överlämnas på ett strukturerat sätt och att den används som ett aktivt verktyg under hela projektet.</p>
+                        
+                    </div>
+	</div>
+</body>
+</html>
