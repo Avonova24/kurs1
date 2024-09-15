@@ -30,6 +30,7 @@
             display: flex;
             width: 100%;
             gap: 5%;
+            margin-top: 20px;
 
         }
 		
@@ -64,11 +65,19 @@
 
         }
 
+        .image-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
         .image-box {
             width: 30%;
-            max-width: 250px;
+            max-width: 200px;
             flex: 0.8;
+            margin-bottom: 5%;
         }
+
+    
 
     </style>
 </head>
@@ -89,7 +98,10 @@
                     tillfredsställande arbetsmiljö.</p>
                 </div>
 
-                <img class="image-box" src="../images/planeraama.png">
+                <div class="image-container">
+                    <img class="image-box" src="../images/planeraama.png">
+                    <a href="https://www.av.se/globalassets/filer/publikationer/foreskrifter/planering-och-organisering-av-arbetsmiljoarbete-grundlaggande-skyldigheter-for-dig-med-arbetsgivaransvar-afs2023-2.pdf" class="button-link">Läs AFS 2023:1</a>
+                </div>
             </div>
             
         <div class="content">
