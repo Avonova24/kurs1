@@ -6,16 +6,23 @@
     <title>Arbetsmiljöverkets förbättringar i regelverket</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
-         
-      .content1 {
-        margin-top: 5%;
-      }
-		
-        ul {
-            margin-left: 5%;
+    
+        .container {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
         }
-		
-       
+        
+        .content1 {
+            margin-top: 5%;
+        }
+        
+        ul {
+            margin-left: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        
         .avonova-logo {
             display: block;
             margin-bottom: -10px;
@@ -27,9 +34,88 @@
         
         }
 
-        .textbox {
-            max-width: 800px;
+        .circle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
             margin-top: 5%;
+            
+        }
+
+        .circle-button-green1, .circle-button-green2, .circle-button-green3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            width: 130px;
+            height: 130px;
+            padding: 14px;
+            
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            
+            border-radius: 50%;
+            border: none;
+            
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .circle-button-green1 {
+            background-color: #00866d;
+        }
+
+        .circle-button-green2 {
+            background-color: #005646;
+        }
+
+        .circle-button-green3 {
+            background-color: #01332a;
+
+        }
+
+        .circle-button-green1:hover, .circle-button-green2:hover, .circle-button-green3:hover {
+            background-color: #aff0e5;
+            color: #01332a;
+        }
+
+        .toggle-radio {
+            display: none;
+        }
+
+        .content {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            
+            max-width: 700px;
+            margin-top: 5%;  
+        }
+
+        .toggle-radio:checked + .content {
+            display: flex;
+        }
+
+        .content img {
+            width: 200px;
+            margin: 0;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 16px;
+            text-align: left;
+            padding: 0 5% 0 2%;
+            
+        }
+
+        .green {
+            color: #005646;
         }
 		
     </style>
@@ -50,20 +136,40 @@
             <li>Ökat antalet definitioner för att göra reglerna mer klara.</li>
             <li>Förtydligat ansvar och uppgifter – tydligare om vem som ska göra vad.</li>
             </ul>
+       
+            <p>Dessa förändringar har resulterat i att föreskrifterna har blivit enklare och kortare, 
+            vilket gör dem lättare att hitta, förstå och använda. Klicka på de <b class="green">gröna knapparna</b> nedan för
+            att läsa mer om några av förändringarna. </p>
         </div>
 
-        <div class="textbox">
-            <p>Dessa förändringar har resulterat i att föreskrifterna har blivit enklare och kortare, 
-            vilket gör dem lättare att hitta, förstå och använda. 
-            
-            <br><br>Många paragrafer har delats upp så att en paragraf inte längre innehåller flera krav. 
+        <div class="circle-container">
+            <label class="circle-button-green1" for="toggle1">Uppdelade paragrafer</label>
+            <label class="circle-button-green3" for="toggle2">Begreppet aktörer</label>
+            <label class="circle-button-green2" for="toggle3">Begreppet byggprojekt</label>
+        </div>
+
+        <input type="radio" id="toggle1" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/paragrafer.png" alt="Illustration av paragrafer i en bok">
+            <p><b>Uppdelade paragrafer</b>
+            <br>Många paragrafer har delats upp så att en paragraf inte längre innehåller flera krav. 
             Till exempel har tidigare <b>§ 5a och § 5b i AFS 1993:3 kapitel 3</b> nu fördelats över flera mindre 
-            delar. Antalet definitioner har ökat till 21.
-            
-            <br><br>Samlingsbegreppet <b>"aktörer"</b> används nu för att beskriva alla som har ansvar i ett 
-            projekt. 
-            
-            <br><br>Begreppet <b>"byggprojekt"</b> täcker nu all projektering, planering och utförande som 
+            delar. Antalet definitioner har ökat till 21.</p>
+        </div>
+
+        <input type="radio" id="toggle2" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/aktorer.png" alt="Illustration av aktörer">
+            <p><b>Begreppet aktörer</b>
+            <br>Samlingsbegreppet <b>"aktörer"</b> används nu för att beskriva alla som har ansvar i ett 
+            projekt. </p>
+        </div>
+
+        <input type="radio" id="toggle3" name="toggle" class="toggle-radio">
+        <div class="content">
+            <img src="../images/byggprojekt.png" alt="Illustration av byggprojekt">
+            <p><b>Begreppet byggprojekt</b>
+            <br>Begreppet <b>"byggprojekt"</b> täcker nu all projektering, planering och utförande som 
             bidrar till att ett objekt färdigställs inom bygg- och anläggningsbranschen. Byggherren har ansvar 
             för att säkerställa vissa aspekter, medan projektören har ansvar för andra.
             </p>
